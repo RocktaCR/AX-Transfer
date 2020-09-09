@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/9/2020 2:13:27 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="Christofer3"
+  DTS:CreatorName="Christofer3\christofer"
+  DTS:DTSID="{D85D2748-2661-4D1C-9B03-339BC44E3E61}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.128"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{EAA71C2B-BD1C-4B70-9640-0522DD52A401}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ICA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{85661B8D-1EC5-4D88-87FB-38CEB167E0AE}"
+      DTS:ObjectName="ICA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=rnddev4;User ID=PublicUser;Initial Catalog=ICADev4;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADkjIljdzfaeFVSzMql2ux8chffJyIKqYIpnfT+zzTa4AAAAAAOgAAAAAIAACAAAABFzJtXmfP0veGXC8VU19oaCUFwyti2sRKZmvvVcdB0pyAAAADEF97sq1U+9gzYYKQyvKOOVrHVSS9hI7REHcmcTaG95EAAAADBfMEnU0wci5JDP5Wmp1tpavP3crEWERjIhnYCwU8C6EXzOJUvIUZ39RjY25VIScR+VouyPLnz8z6O6mqVFVLi</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MDS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1B5750D7-9143-4968-B587-D99C95A2A756}"
+      DTS:ObjectName="MDS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.193.17.4;User ID=FFClientek;Initial Catalog=MDSPOC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADbFO+Ewowm6Mw0FIuPxjDA5KH4b9TcJj4L5359qqiMnwAAAAAOgAAAAAIAACAAAADGSfoXBC+fkEvYpVw7jUOkLwStRN8iPhFjLjThDmYKkSAAAAD6RYq+msFzXz3jUjidK11DuNCVI09cZ/sqbZi1P0BDNEAAAAD+0NUjCwPnZB9jG9UmWgY172n3tLA5dhYgRdD+JbdCR3HG+arcoRjvW2aiBUBDsT9Ek67DWqEk6umcX1HpE1ZG</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Updates Fields"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D5FCD86B-CF44-4836-8000-2ABCBFBE32EC}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Updates Fields"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Updates Fields\Product Type ICA"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Product Type ICA"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Update Query_BackUp2 Set ProductType = ? where ProductType = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Updates Fields\Product Type ICA.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ICA]"
+                  connectionManagerRefId="Package.ConnectionManagers[ICA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].Columns[Code]"
+                      cachedDataType="i4"
+                      cachedName="Code"
+                      externalMetadataColumnId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Code]" />
+                    <inputColumn
+                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="150"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="40"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="wstr"
+                      length="40"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Updates Fields\ProductType MDS"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="ProductType MDS"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec dbo.GetDomainFields @Entity = 'ProductType'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Updates Fields\ProductType MDS.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MDS]"
+                  connectionManagerRefId="Package.ConnectionManagers[MDS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Code]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Code]"
+                      name="Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="150"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                      dataType="i4"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="150"
+                      name="Name" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Code]"
+                      dataType="i4"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Code]"
+                      name="Code" />
+                    <outputColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Updates Fields.Paths[OLE DB Source Output]"
+              endId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]"
+              name="OLE DB Source Output"
+              startId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Updates Fields"
+          TopLeft="217,243" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Updates Fields">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:s="clr-namespace:System;assembly=mscorlib">
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Updates Fields\ProductType MDS"
+          TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Updates Fields\Product Type ICA"
+          TopLeft="9.5,138.5" />
+        <EdgeLayout
+          Id="Package\Updates Fields.Paths[OLE DB Source Output]"
+          TopLeft="91.25,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,91"
+              Start="0,0"
+              End="0,83.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,83.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.55857421875,37.0390625,31.1171484375,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <GroupLayout
+          Text="Group 2"
+          ParentId="Package\Updates Fields"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="180,235"
+          Size="180,278"
+          Id="47b2cc0e-5a2a-4a27-af55-4b08c276cc03"
+          TopLeft="170.5,138.5">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\Updates Fields\ProductType MDS</s:String>
+            <s:String>Package\Updates Fields\Product Type ICA</s:String>
+            <s:String>Package\Updates Fields.Paths[OLE DB Source Output]</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Updates Fields\ProductType MDS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
