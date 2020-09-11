@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{EAA71C2B-BD1C-4B70-9640-0522DD52A401}">
+  DTS:VersionBuild="84"
+  DTS:VersionGUID="{FD040EE0-0613-4B2B-8562-DAE7BD821523}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="ICA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=rnddev4;User ID=PublicUser;Initial Catalog=ICADev4;Provider=SQLNCLI11.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=rnddev4;User ID=PublicUser;Initial Catalog=ICADev4;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADkjIljdzfaeFVSzMql2ux8chffJyIKqYIpnfT+zzTa4AAAAAAOgAAAAAIAACAAAABFzJtXmfP0veGXC8VU19oaCUFwyti2sRKZmvvVcdB0pyAAAADEF97sq1U+9gzYYKQyvKOOVrHVSS9hI7REHcmcTaG95EAAAADBfMEnU0wci5JDP5Wmp1tpavP3crEWERjIhnYCwU8C6EXzOJUvIUZ39RjY25VIScR+VouyPLnz8z6O6mqVFVLi</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACa0Hyn8Y50ASZvsqr41Wa+Q+H1BmyNVdvVgWkjRXJyvwAAAAAOgAAAAAIAACAAAACoaJK/Ogj1pIjqW1rPegtQPUwsr74YmbCKaNrhbcOsuSAAAAB6UjNt67RLAZCBxEa2r3QGVff18K5xFZT3maQtlrQL9kAAAADhMM9YJKzRKjgSNA3olCm48eJBz+BZ1eKm//DMkq3izcGXcFUa2aFA8H25ypDuF6TWKeyIqHiclV9tz/g6H7rl</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,281 +42,454 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADbFO+Ewowm6Mw0FIuPxjDA5KH4b9TcJj4L5359qqiMnwAAAAAOgAAAAAIAACAAAADGSfoXBC+fkEvYpVw7jUOkLwStRN8iPhFjLjThDmYKkSAAAAD6RYq+msFzXz3jUjidK11DuNCVI09cZ/sqbZi1P0BDNEAAAAD+0NUjCwPnZB9jG9UmWgY172n3tLA5dhYgRdD+JbdCR3HG+arcoRjvW2aiBUBDsT9Ek67DWqEk6umcX1HpE1ZG</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACJRR8yRzFAs1y2M38WRcGa6eaGbtTt95DrEkUwezDBvgAAAAAOgAAAAAIAACAAAADBArdmwEx4Gu4eAxCdo5hNk0fKVj17M+9eZVer9GW6mCAAAAD6ZABWqGLsAQaa6sbDgW/V3lxsMygAwwTZvUO6UElhkEAAAACTKgmqeq5q5DyyrmyAuFxHmm16lK7hbPdPFhQeLKmbITKCyuHDQkxAr4qkMOxdzMMOP7ZhjZnFhftoXRDVACKM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{7A332D26-C2D5-44E7-8263-D8BD32C28B92}"
+      DTS:ObjectName="BatchTag">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">AX-TransferData</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{83B688E8-F429-4591-A89B-818C31BDD931}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Domain">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0B81EEA4-C40F-449B-A05F-52ACE7063B47}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Entity">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6B6FE133-CBBF-432B-BD74-453BC5031053}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ResultSet">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C48A821E-A3AB-444B-A589-FB1DBB57D3D8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Script">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Updates Fields"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{D5FCD86B-CF44-4836-8000-2ABCBFBE32EC}"
-      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8A8BB908-A1E0-4363-8FA3-023F5048BC93}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Updates Fields"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Updates Fields\Product Type ICA"
-              componentClassID="Microsoft.OLEDBCommand"
-              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
-              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
-              name="Product Type ICA"
-              usesDispositions="true"
-              version="2">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Update Query_BackUp2 Set ProductType = ? where ProductType = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Updates Fields\Product Type ICA.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[ICA]"
-                  connectionManagerRefId="Package.ConnectionManagers[ICA]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]"
-                  errorOrTruncationOperation="Command Execution"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Command Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].Columns[Code]"
-                      cachedDataType="i4"
-                      cachedName="Code"
-                      externalMetadataColumnId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Code]" />
-                    <inputColumn
-                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="150"
-                      cachedName="Name"
-                      externalMetadataColumnId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Name]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      dataType="wstr"
-                      length="40"
-                      name="Param_0">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                          name="DBParamInfoFlags">65</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                      dataType="wstr"
-                      length="40"
-                      name="Param_1">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                          name="DBParamInfoFlags">65</property>
-                      </properties>
-                    </externalMetadataColumn>
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Output]"
-                  exclusionGroup="1"
-                  name="OLE DB Command Output"
-                  synchronousInputId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Command Error Output"
-                  synchronousInputId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Updates Fields\Product Type ICA.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Updates Fields\ProductType MDS"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="ProductType MDS"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec dbo.GetDomainFields @Entity = 'ProductType'</property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">2</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Updates Fields\ProductType MDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[MDS]"
-                  connectionManagerRefId="Package.ConnectionManagers[MDS]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Code]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Code]"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Code]"
-                      name="Code"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      length="150"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Code]"
-                      dataType="i4"
-                      name="Code" />
-                    <externalMetadataColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="150"
-                      name="Name" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Code]"
-                      dataType="i4"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Code]"
-                      name="Code" />
-                    <outputColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Name]"
-                      dataType="wstr"
-                      length="150"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[Name]"
-                      name="Name" />
-                    <outputColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Updates Fields.Paths[OLE DB Source Output]"
-              endId="Package\Updates Fields\Product Type ICA.Inputs[OLE DB Command Input]"
-              name="OLE DB Source Output"
-              startId="Package\Updates Fields\ProductType MDS.Outputs[OLE DB Source Output]" />
-          </paths>
-        </pipeline>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1B5750D7-9143-4968-B587-D99C95A2A756}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="Select Entity, Domain from DomainEntity"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::ResultSet" />
+        </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop Related Entities"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:DTSID="{E47DD68F-C360-4FFE-BCD7-EE6744BA066B}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop Related Entities">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachADOEnumerator"
+        DTS:DTSID="{AAF05EAD-5624-470C-BFC2-0A49BABDAFEC}"
+        DTS:ObjectName="{AAF05EAD-5624-470C-BFC2-0A49BABDAFEC}">
+        <DTS:ObjectData>
+          <FEEADO
+            EnumType="EnumerateRowsInFirstTable"
+            VarName="User::ResultSet" />
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop Related Entities\Data Flow Task"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{C5AC7C12-D1B3-4712-873E-D78EE984E06C}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command"
+                  componentClassID="Microsoft.OLEDBCommand"
+                  contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+                  name="OLE DB Command"
+                  usesDispositions="true"
+                  validateExternalMetadata="False"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Exec updateFieldsAX @Name = ? , @Code = ?, @Entity = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ICA]"
+                      connectionManagerRefId="Package.ConnectionManagers[ICA]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
+                      errorOrTruncationOperation="Command Execution"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Command Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[Name]"
+                          cachedDataType="wstr"
+                          cachedLength="250"
+                          cachedName="Name"
+                          externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Name]"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]" />
+                        <inputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[Code]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="Code"
+                          externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Code]"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]" />
+                        <inputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[Entity]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="Entity"
+                          externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Entity]"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Entity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Name]"
+                          dataType="wstr"
+                          length="250"
+                          name="@Name">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">193</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Code]"
+                          dataType="wstr"
+                          length="3"
+                          name="@Code">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">193</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Entity]"
+                          dataType="wstr"
+                          length="100"
+                          name="@Entity">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">193</property>
+                          </properties>
+                        </externalMetadataColumn>
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Output]"
+                      exclusionGroup="1"
+                      name="OLE DB Command Output"
+                      synchronousInputId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Command Error Output"
+                      synchronousInputId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec dbo.GetDomainFields @Domain = ?, @Entity = ?</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping">"@Domain:Input",{83B688E8-F429-4591-A89B-818C31BDD931};"@Entity:Input",{0B81EEA4-C40F-449B-A05F-52ACE7063B47};</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[MDS]"
+                      connectionManagerRefId="Package.ConnectionManagers[MDS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                          length="10"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]"
+                          name="Code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          length="250"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          name="Name"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Entity]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Entity]"
+                          length="100"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Entity]"
+                          name="Entity"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                          dataType="wstr"
+                          length="10"
+                          name="Code" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          dataType="wstr"
+                          length="250"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Entity]"
+                          dataType="wstr"
+                          length="100"
+                          name="Entity" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Code]"
+                          dataType="wstr"
+                          length="10"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Code]"
+                          name="Code" />
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          dataType="wstr"
+                          length="250"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          name="Name" />
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Entity]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Entity]"
+                          name="Entity" />
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Loop Related Entities\Data Flow Task.Paths[OLE DB Source Output]"
+                  endId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{F8483B0A-9249-42B1-BBAC-37159BBE75E5}"
+          DTS:ObjectName="{F8483B0A-9249-42B1-BBAC-37159BBE75E5}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Entity" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{FAEB2EFE-5CDC-49BA-BF3E-F0C22A0B0202}"
+          DTS:ObjectName="{FAEB2EFE-5CDC-49BA-BF3E-F0C22A0B0202}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::Domain" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{202BE7B3-B672-44D9-9FD7-930F7D7F08E8}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Loop Related Entities" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -328,71 +501,99 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152,42"
-          Id="Package\Updates Fields"
-          TopLeft="217,243" />
-      </GraphLayout>
-    </LayoutInfo>
-  </Package>
-  <TaskHost
-    design-time-name="Package\Updates Fields">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:s="clr-namespace:System;assembly=mscorlib">
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="481,93" />
         <NodeLayout
-          Size="169,42"
-          Id="Package\Updates Fields\ProductType MDS"
-          TopLeft="5.5,5.5" />
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Updates Fields\Product Type ICA"
-          TopLeft="9.5,138.5" />
+          Size="155,42"
+          Id="Package\Loop Related Entities\Data Flow Task"
+          TopLeft="30.5,22.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="222,119"
+          Size="222,162"
+          Id="Package\Loop Related Entities"
+          TopLeft="456,197" />
         <EdgeLayout
-          Id="Package\Updates Fields.Paths[OLE DB Source Output]"
-          TopLeft="91.25,47.5">
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="566.5,135">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,91"
+              EndConnector="0,62"
               Start="0,0"
-              End="0,83.5">
+              End="0,54.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,83.5" />
+                    End="0,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.55857421875,37.0390625,31.1171484375,9.421875"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <GroupLayout
-          Text="Group 2"
-          ParentId="Package\Updates Fields"
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="180,235"
-          Size="180,278"
-          Id="47b2cc0e-5a2a-4a27-af55-4b08c276cc03"
-          TopLeft="170.5,138.5">
-          <GroupLayout.ChildrenIds>
-            <s:String>Package\Updates Fields\ProductType MDS</s:String>
-            <s:String>Package\Updates Fields\Product Type ICA</s:String>
-            <s:String>Package\Updates Fields.Paths[OLE DB Source Output]</s:String>
-          </GroupLayout.ChildrenIds>
-        </GroupLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Loop Related Entities\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Loop Related Entities\Data Flow Task\OLE DB Command"
+          TopLeft="504,301" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Loop Related Entities\Data Flow Task\OLE DB Source"
+          TopLeft="503,68" />
+        <EdgeLayout
+          Id="Package\Loop Related Entities\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="581.5,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9,191"
+              Start="0,0"
+              End="9,183.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,91.5"
+                    Point2="0,95.5"
+                    Point3="4,95.5" />
+                  <mssgle:LineSegment
+                    End="5,95.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5,95.5"
+                    Point2="9,95.5"
+                    Point3="9,99.5" />
+                  <mssgle:LineSegment
+                    End="9,183.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Updates Fields\ProductType MDS">
+    design-time-name="Package\Loop Related Entities\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
