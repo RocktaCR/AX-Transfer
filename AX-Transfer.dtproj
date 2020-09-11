@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">Christofer3</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAACAAAAAAAQZgAAAAEAACAAAAAxQWDUt0iDVYjFprzc9rX2ONacKiNzOiepn5fC/1WInQAAAAAOgAAAAAIAACAAAAAnAop4hSOSpBHbCd/gNb+i4XM31olbULHzwgIto6b/Q5AAAAChV6nFRx3wIIN7Zjs4LTn2skx32qKM4RUhpYRTAqZhxiD+7+9K7/Zkznn9mobU2NnScGM75DLqUSCLzW+Lpz9xf0rvJc8Fle+/E3ardm0/2Kmalok4fG3LX+ycKHhzx2euUYoLAcajDETYbeb/olBISRS+VxUVZyYZu+xBESAWDtPTuCjb2/K79hwG8ySMfFBAAAAAYClBZP+0+C4JXcPhFAm8CSFSoDT9UsFXXpeCJVNzIwIr/92tz0+MDjaga28IgEnzMVtxvKrz1XHNbISWN9aDBg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAACAAAAAAAQZgAAAAEAACAAAADT16vbOZaDNkJmtGPGopoTVcckowVDGfiyX0lG3W03VgAAAAAOgAAAAAIAACAAAAB7m1Ro+rNC6WDTLoqCnuvbIge80ojSX6nmOtK3ktyTYJAAAAD4cTgHE3TEhlvsiGFbxZlMLtM80jBneZbwHXd21xKW8U65jx9ApHHoH39aa8lbwzlAcMhOiDwOgX778DBAaFhvB7G8kZpzXCPrvtfkblpbhlL0yhw+naeUbvc2N5gVZA1xde9YcaIgvOWwUV2gj4bvbIRFGnA0lPzOPjGBRmjvwXX3XXPWOb1DHCVijDPHCSdAAAAA7Pib+CyXhTM4kQQ+6P0guQgIJWAATE0p3vX4OGCMGc1KJvJSktOl9rQ5BfwrlDyg6zsm9S+k0KeREAv/AICdcA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">84</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">89</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{FD040EE0-0613-4B2B-8562-DAE7BD821523}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7B3D7F63-6443-4CDF-9658-48A0A7BBE448}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -64,6 +64,20 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">AX-TransferData</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="ImportType">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{6CE623F8-6CB9-41C4-82B1-DEF8A981C122}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">1</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.ICA.ConnectByProxy">
