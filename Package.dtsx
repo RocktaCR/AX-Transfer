@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="144"
-  DTS:VersionGUID="{8495C7FF-EB7B-4E2E-A457-DCF520162041}">
+  DTS:VersionBuild="145"
+  DTS:VersionGUID="{2625A1DE-3151-4272-AA06-F59A9EC103EE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACrX6dgiyIXRFGFnFAWvBQGUiHe/xAZO4VQbxYaa4M1KgAAAAAOgAAAAAIAACAAAAD9UG18pPuRYMI6ueEvDAPStfu2yAbYAH6MGMrV43zxuyAAAABFxrnyU56wwLCm9VvGcUBI/zpSg7crT+l8vWKVu1dFo0AAAADv2pPRBtmxxg0XVL9aqxj3cW/dAtuRgKmxBwkRotfEDev7YsMjvjd2g5gm0CSLB3M6+omeBHLJ0xP5qSu7ttV1</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAUZ4d6sqWyws4IQasePkQAYYeFflrYFvy45RzfRkEc3QAAAAAOgAAAAAIAACAAAADPrl7QVLKK2tZtugGaxSiVszuNWmXqI+TBArbsZnZSuiAAAAA+G+3p7GOlqBVKW/erGBqP4UHj3LEf7kY3POIwqAq36kAAAADkLOTBs587M1bEyVljrxvNcLrLkOaI0HQFl0UahpZVkRiusZNBig0dJojKQUt2UPHe0HLBX6eyrNqgogqqohk+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -435,6 +435,14 @@
               <FEIEItemValue
                 Type="8"
                 Value="BitEntity" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="DeliveryDateControl" />
+              <FEIEItemValue
+                Type="8"
+                Value="DeliveryDateControl" />
             </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
@@ -928,14 +936,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{8456A89A-2F18-4399-9868-72148889278A}"
-          DTS:ObjectName="{8456A89A-2F18-4399-9868-72148889278A}"
+          DTS:DTSID="{26F850D8-E957-4929-A38F-FDF68232CBD7}"
+          DTS:ObjectName="{26F850D8-E957-4929-A38F-FDF68232CBD7}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::ColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{33A2537D-99FA-4E4B-9C25-88F8DAE2CBA8}"
-          DTS:ObjectName="{33A2537D-99FA-4E4B-9C25-88F8DAE2CBA8}"
+          DTS:DTSID="{65ECC6FB-E893-4A00-A899-54A3F4619C53}"
+          DTS:ObjectName="{65ECC6FB-E893-4A00-A899-54A3F4619C53}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::StagingName" />
       </DTS:ForEachVariableMappings>
@@ -4719,6 +4727,28 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib">
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="411,344">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,121"
+              Start="0,0"
+              End="0,113.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,113.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="412,601">
           <EdgeLayout.Curve>
@@ -4800,14 +4830,14 @@
           PanelSize="266,166"
           Size="266,209"
           Id="Package\Add new Entities data"
-          TopLeft="13.5,13.5" />
+          TopLeft="13.5,10.5" />
         <GroupLayout
           Text="Insert Domain data"
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="297,245"
-          Size="297,288"
+          PanelSize="297,274"
+          Size="297,318"
           Id="c28d51bd-7982-405b-8fae-cb32710ed5df"
           TopLeft="261.5,82.5">
           <GroupLayout.ChildrenIds>
@@ -4859,28 +4889,6 @@
             <s:String>Package.PrecedenceConstraints[Constraint 1]</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="411,348">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,117"
-              Start="0,0"
-              End="0,109.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,109.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
