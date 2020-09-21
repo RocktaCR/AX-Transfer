@@ -81,16 +81,19 @@ Update Query_BackUp set [InventoryUnit] = NULL where [InventoryUnit] = ''
 Update Query_BackUp set [BOM_Unit] = NULL where [BOM_Unit] = ''
 Update Query_BackUp set [UnitUnitsequenceGroupID] = NULL where [UnitUnitsequenceGroupID] = ''
 
---Truncate table Query_backup
+Truncate table Query_backup
 
---Insert into Query_backup
---Select * from query 
-
-Update Query_BackUp 
-set DeliveryDateControl = 1 
-where DeliveryDateControl > 1
+Insert into Query_backup
+Select * from query 
 
 Update Query_BackUp
 Set MassVolumeUOM = Null
 where MassVolumeUOM = 'NULL'
+
+
+Select * from Query where searchName like '%Vip%'
+
+
+NBP2-74909AF350
+NBP2-74909AF405
 
