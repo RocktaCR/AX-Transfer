@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="163"
-  DTS:VersionGUID="{4D17B903-3AC1-40DB-AD6F-E32300C75E98}">
+  DTS:VersionBuild="168"
+  DTS:VersionGUID="{300E4610-9DE5-425B-8E10-DD534BFFA0A9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACScwspOaiXf1jlmJeH6/kWbgsk5d/R0/AfwpAoL6mpTQAAAAAOgAAAAAIAACAAAACvmzLvNmCvx8NntO96F/mRm1VxfU0YP30Yvvl1khGdjCAAAADkxDOudU4wI9x3VeLmmR/UeO+YO3+65osR/NaHthvaukAAAACbpuLHfiaqO6J16Jhb1pPIibPTKYbqJ4fnjiycPge4w9PW4xu5+Xki9VV7VgLSApdpyIPN6QKeUymuSB+w3HQg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAATloZWCcX9k7yKvbMl5RVHJjAW3xYbzW5F6bpPpGUNVgAAAAAOgAAAAAIAACAAAAA9cK8FP6YevhJ74GneSYKMingROgkm5XybQMxcAOMu+yAAAAAMKV0+SgcYhhPTv0A9sw9CwoqtysNdpbt3mJ3eHeUaa0AAAADKzUhMMKhxMXqT9sn802k0biYNjHz8Mm62J3YHgw0gq3/bkmghvdLdbrySA/sY81hlk9cqSsGaliXzTxPjBcbV</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA7MDLzTStyoAiJzzbG1MDs+9hhDKeC6S73c8CXyNUGxQAAAAAOgAAAAAIAACAAAACZLdqEKKzTRHiUK1Y6QHVbNvFDzGR/UnSsQJCZn6VRvSAAAACxtSyPsXezLyL0hWmMzMgrbqWUcTQ1mdPCF8sGbZXMDUAAAADVtd0gF5PM9xOxZMx2kulHMvjoIwWdmnPl5FJgt6YsJUyataMitC+SHmHKX0AGCt+pR7CGrKGl7hK6O0LrwJso</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAutDyMnADdpmr2BGWfDRHeLn77l9ObR0gl2ZjdmH6SWQAAAAAOgAAAAAIAACAAAABHL1ZlKSLuZg161V8iJVclTXim5ImGrX27/N9xd9KMDCAAAADmxyhb5VNCRUdJGc6IjHUNCQVjHFsu1inwiA+JWHJbN0AAAACewJmISw37HDiC5+g0BNcmttp00v8/g/yrhIP2J/3KTlaoVggqJERAs/KMhMV7/Rvo0fR6p7vKVldAjniQtBlJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -55,7 +55,7 @@
       DTS:ObjectName="BatchTag">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">AXTransferData3</DTS:Property>
+        DTS:Name="ParameterValue">AXTransferData1</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -456,6 +456,14 @@
               <FEIEItemValue
                 Type="8"
                 Value="ProductDimensionGroup" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProductSubType" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProductSubtype" />
             </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
@@ -949,14 +957,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{A7309C5F-DCDE-4B6A-BAE0-0CEDD0300444}"
-          DTS:ObjectName="{A7309C5F-DCDE-4B6A-BAE0-0CEDD0300444}"
+          DTS:DTSID="{8EE61D4A-5A43-4259-B785-2D4A7C6ECA53}"
+          DTS:ObjectName="{8EE61D4A-5A43-4259-B785-2D4A7C6ECA53}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::ColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{13D6FBD4-8FD7-4C27-9515-51655E83F798}"
-          DTS:ObjectName="{13D6FBD4-8FD7-4C27-9515-51655E83F798}"
+          DTS:DTSID="{4C289FCA-7702-4D72-BC8C-D292BD83FEC4}"
+          DTS:ObjectName="{4C289FCA-7702-4D72-BC8C-D292BD83FEC4}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::StagingName" />
       </DTS:ForEachVariableMappings>
@@ -987,6 +995,14 @@
                   refId="Package\Insert on AX table\Derived Column.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Insert on AX table\Derived Column.Inputs[Derived Column Input].Columns[ConfigurationTechnology]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="ConfigurationTechnology"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ConfigurationTechnology]" />
+                  </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -1041,6 +1057,28 @@
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
                           name="FriendlyExpression">@[$Package::BatchTag]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[ProductSubType]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[ProductSubType]"
+                      name="ProductSubType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ISNULL](#{Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ConfigurationTechnology]}) ? 0 : 1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ISNULL(ConfigurationTechnology) ? 0 : 1</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -1146,7 +1184,7 @@
                     <inputColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
                       cachedDataType="wstr"
-                      cachedLength="250"
+                      cachedLength="500"
                       cachedName="Name"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]" />
@@ -1187,7 +1225,7 @@
                     <inputColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SearchName]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="750"
                       cachedName="SearchName"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SearchName]"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[SearchName]" />
@@ -1332,7 +1370,7 @@
                     <inputColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MassVolumeUOM]"
                       cachedDataType="wstr"
-                      cachedLength="10"
+                      cachedLength="500"
                       cachedName="MassVolumeUOM"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MassVolumeUOM]"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[MassVolumeUOM]" />
@@ -1643,6 +1681,12 @@
                       cachedName="UnitUnitsequenceGroupID"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsequenceGroupID]"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[UnitUnitsequenceGroupID]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductSubType]"
+                      cachedDataType="i4"
+                      cachedName="ProductSubType"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Product Subtype]"
+                      lineageId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[ProductSubType]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1729,7 +1773,7 @@
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductDimensionGroup]"
                       dataType="wstr"
-                      length="20"
+                      length="250"
                       name="ProductDimensionGroup" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StorageDimensionGroup]"
@@ -2161,6 +2205,16 @@
                       dataType="dbTimeStamp2"
                       name="LastSentToAX"
                       scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryofOrigin]"
+                      dataType="wstr"
+                      length="250"
+                      name="CountryofOrigin" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Brand]"
+                      dataType="wstr"
+                      length="100"
+                      name="Brand" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2256,7 +2310,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      length="250"
+                      length="500"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
                       name="Name"
                       truncationRowDisposition="FailComponent" />
@@ -2324,7 +2378,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductName]"
-                      length="60"
+                      length="500"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductName]"
                       name="ProductName"
                       truncationRowDisposition="FailComponent" />
@@ -2334,7 +2388,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SearchName]"
-                      length="20"
+                      length="750"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[SearchName]"
                       name="SearchName"
                       truncationRowDisposition="FailComponent" />
@@ -2542,7 +2596,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MassVolumeUOM]"
-                      length="10"
+                      length="500"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[MassVolumeUOM]"
                       name="MassVolumeUOM"
                       truncationRowDisposition="FailComponent" />
@@ -3062,7 +3116,7 @@
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
                       dataType="wstr"
-                      length="60"
+                      length="500"
                       name="Name" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Code]"
@@ -3095,12 +3149,12 @@
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductName]"
                       dataType="wstr"
-                      length="60"
+                      length="500"
                       name="ProductName" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SearchName]"
                       dataType="wstr"
-                      length="20"
+                      length="750"
                       name="SearchName" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ConfigurationTechnology]"
@@ -3203,7 +3257,7 @@
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MassVolumeUOM]"
                       dataType="wstr"
-                      length="10"
+                      length="500"
                       name="MassVolumeUOM" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ShelfLifePeriodinDays]"
@@ -3460,7 +3514,7 @@
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
                       dataType="wstr"
-                      length="60"
+                      length="500"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
                       name="Name" />
                     <outputColumn
@@ -3500,13 +3554,13 @@
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductName]"
                       dataType="wstr"
-                      length="60"
+                      length="500"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductName]"
                       name="ProductName" />
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SearchName]"
                       dataType="wstr"
-                      length="20"
+                      length="750"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SearchName]"
                       name="SearchName" />
                     <outputColumn
@@ -3630,7 +3684,7 @@
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MassVolumeUOM]"
                       dataType="wstr"
-                      length="10"
+                      length="500"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MassVolumeUOM]"
                       name="MassVolumeUOM" />
                     <outputColumn
@@ -4749,18 +4803,18 @@
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib">
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="737,306">
+          TopLeft="737,336">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,117"
+              EndConnector="0,87"
               Start="0,0"
-              End="0,109.5">
+              End="0,79.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,109.5" />
+                    End="0,79.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4834,21 +4888,21 @@
         <NodeLayout
           Size="192,42"
           Id="Package\Add new Entities data\Insert on staging tables"
-          TopLeft="41.5,21.5" />
+          TopLeft="42.5,20.5" />
         <EdgeLayout
           Id="Package\Add new Entities data.PrecedenceConstraints[Constraint]"
-          TopLeft="139.75,63.5">
+          TopLeft="140.25,62.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,35.5"
+              EndConnector="0,36.5"
               Start="0,0"
-              End="0,28">
+              End="0,29">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28" />
+                    End="0,29" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4860,8 +4914,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="266,166"
-          Size="266,209"
+          PanelSize="266,196"
+          Size="266,239"
           Id="Package\Add new Entities data"
           TopLeft="13.5,10.5" />
         <GroupLayout
@@ -4869,8 +4923,8 @@
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="297,275"
-          Size="297,318"
+          PanelSize="297,305"
+          Size="297,348"
           Id="c28d51bd-7982-405b-8fae-cb32710ed5df"
           TopLeft="587.5,43.5">
           <GroupLayout.ChildrenIds>
@@ -4996,7 +5050,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,50.25,16,16"
+              BoundingBox="-24.15623046875,50.25,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
