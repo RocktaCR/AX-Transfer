@@ -86,3 +86,13 @@ Set MassVolumeUOM = Null
 where MassVolumeUOM = 'NULL'
 
 
+
+
+Truncate Table Query_BackUp
+
+INsert into Query_BackUp
+select * from query 
+
+
+
+Select top 1000 * from Query_BackUp
