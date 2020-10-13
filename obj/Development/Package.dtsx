@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="225"
-  DTS:VersionGUID="{A816C42F-D1E7-467A-B84D-4188377C38FD}">
+  DTS:VersionBuild="227"
+  DTS:VersionGUID="{B9DF407A-85E0-40A6-BB04-1881DF94E436}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAFUTCqjAA46VwvJ7EYijjgmaNbf9hW9eduhESlMWLthAAAAAAOgAAAAAIAACAAAABUnKt4QhI0CcZJGdQnvPEcFCwBV7DleY6PzOyHzW6t7yAAAAC+23EYQKC5dFoByvT+EgZOe63+QicusCY5Bo1vpNdpXUAAAACj0EO0CjypzSZbKTXLoUCXTq8m26O6koKycSdko2DjGgYhSriRadCzD6s4n6ymXhaw5xdkesocFcaWJRSgIvFb</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADvNbXh1FopZjtWwJ1xKdTAnkHz1yi1QWBM9U03aqB9GgAAAAAOgAAAAAIAACAAAAC7FyxslKQL8hwsoHJWEqERa/LfYdgP4nQFx8kRmYfVhCAAAADnzK+oOI8jwuaIRIiGm4jTGB0p8fNKCOzQEoNUyNb8pEAAAADuIE8KMdGNS1noqHLxTatnfwDLjR/lgXj44jcrgzvMQa0E8LzS9oNXaJZo/OTxshRdyXeN+P0fTsCAb6Hixspz</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABjtezfgzg4+r3xSeTFjnjPxMFWT3aCoZWUPcWw03KA0gAAAAAOgAAAAAIAACAAAACa0wLzQLcjzL8kusw3hHmCamx1jIkBHErFtwtp7OEKviAAAACsKqEB4ApwvYmfHyQsRI9s2gT0JDdat2s3/Engmh3OgEAAAAA+uobsH8jmICkBSibeMwwN9Ps0VddhbAMSew4WN75F5+Mtc0JZmvd1+5sC9uBEM88NZmZ2WhsdWLdXdrIyTzzP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADgep9MdjZwACrCO3aXdULOMc4RDscUzJ9mONThJ006ygAAAAAOgAAAAAIAACAAAAD5Uz9M0kCLeZrvL20fTr+S72KRfqNMyQXR6px+oByn6iAAAABoPJV1rzJjglApg/HjqrB8slmkJ+Vs6or903tX8FycqkAAAADfjGMBKEnmdMMai/8zjrSNR7AShh7pJxncEHECkJm2gPhHFDmH19P8o4CFAghLDwKlgdp+qokspk2o4P0jAYSm</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1004,6 +1004,535 @@
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Add new Entities data 1"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{a6e82d15-bfd6-4b58-b40a-8220b46bf5fb}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Add new Entities data 1">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{42736b84-0ad7-4d18-a579-1690e16a10d9}"
+        DTS:ObjectName="{F5143244-2055-4AA2-B07F-F8C1F77CC9B9}">
+        <DTS:ObjectData>
+          <FEIEItems>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProductType2" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProductType2" />
+            </FEIEItem>
+          </FEIEItems>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Add new Entities data 1\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4abc85ef-b3a2-40f0-92cc-b64f699570e3}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{1B5750D7-9143-4968-B587-D99C95A2A756}"
+              SQLTask:SqlStatementSource="Exec InsertDomainBasedFieldsFinal ?,?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@StagingTable"
+                SQLTask:DtsVariableName="User::StagingName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="255" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@BatchTag"
+                SQLTask:DtsVariableName="$Package::BatchTag"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="255" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Add new Entities data 1\Insert on staging tables"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{464390ab-1284-4e3f-8f71-96156e90f1f4}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Insert on staging tables"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="15"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]"
+                          name="BatchTag"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[$Package::BatchTag]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[$Package::BatchTag]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[EntityName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="100"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[EntityName]"
+                          name="EntityName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_WSTR,100)@[User::StagingName]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_WSTR,100)@[User::StagingName]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[ImportType]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[ImportType]"
+                          name="ImportType"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[$Package::ImportType]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[$Package::ImportType]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command"
+                  componentClassID="Microsoft.OLEDBCommand"
+                  contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+                  name="OLE DB Command"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Exec InsertDomainBasedFields ?,?,?,?,?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[MDS]"
+                      connectionManagerRefId="Package.ConnectionManagers[MDS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input]"
+                      errorOrTruncationOperation="Command Execution"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Command Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[EntityName]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="EntityName"
+                          externalMetadataColumnId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Entity]"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[EntityName]" />
+                        <inputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[Name]"
+                          cachedDataType="wstr"
+                          cachedLength="250"
+                          cachedName="Name"
+                          externalMetadataColumnId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@EName]"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]" />
+                        <inputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[RowNum]"
+                          cachedDataType="wstr"
+                          cachedLength="250"
+                          cachedName="RowNum"
+                          externalMetadataColumnId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@ECode]"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].Columns[RowNum]" />
+                        <inputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[BatchTag]"
+                          cachedDataType="wstr"
+                          cachedLength="15"
+                          cachedName="BatchTag"
+                          externalMetadataColumnId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@BatchTag]"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]" />
+                        <inputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[ImportType]"
+                          cachedDataType="i4"
+                          cachedName="ImportType"
+                          externalMetadataColumnId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@ImportType]"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[ImportType]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Entity]"
+                          dataType="wstr"
+                          length="100"
+                          name="@Entity">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@EName]"
+                          dataType="wstr"
+                          length="250"
+                          name="@EName">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@ECode]"
+                          dataType="wstr"
+                          length="250"
+                          name="@ECode">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@BatchTag]"
+                          dataType="wstr"
+                          length="100"
+                          name="@BatchTag">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@ImportType]"
+                          dataType="i4"
+                          name="@ImportType">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Outputs[OLE DB Command Output]"
+                      exclusionGroup="1"
+                      name="OLE DB Command Output"
+                      synchronousInputId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Command Error Output"
+                      synchronousInputId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Exec getAxFields @ColumnName = ?</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping">"@ColumnName:Input",{9591FF06-49A2-483F-BB41-FDB232D773CF};</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ICA]"
+                      connectionManagerRefId="Package.ConnectionManagers[ICA]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].Columns[RowNum]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[RowNum]"
+                          length="250"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].Columns[RowNum]"
+                          name="RowNum"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          length="250"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          name="Name"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[RowNum]"
+                          dataType="i8"
+                          name="RowNum" />
+                        <externalMetadataColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          dataType="i4"
+                          name="Name" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[RowNum]"
+                          dataType="i8"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[RowNum]"
+                          name="RowNum" />
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          dataType="i4"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          name="Name" />
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Add new Entities data 1\Insert on staging tables.Paths[Derived Column Output]"
+                  endId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input]"
+                  name="Derived Column Output"
+                  startId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Add new Entities data 1\Insert on staging tables.Paths[OLE DB Source Output]"
+                  endId="Package\Add new Entities data 1\Insert on staging tables\Derived Column.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Add new Entities data 1.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{a62d0da7-3a7f-4aae-8f1b-0f8ed9f3c67b}"
+          DTS:From="Package\Add new Entities data 1\Insert on staging tables"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Add new Entities data 1\Execute SQL Task" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{CAD47B60-BBEF-42BC-9325-FBE0D30CA515}"
+          DTS:ObjectName="{CAD47B60-BBEF-42BC-9325-FBE0D30CA515}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::ColumnName" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{61CACDE6-0D63-49D1-9D6B-26009B73F511}"
+          DTS:ObjectName="{61CACDE6-0D63-49D1-9D6B-26009B73F511}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::StagingName" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\DefaultValues"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -1014,6 +1543,23 @@
       DTS:ObjectName="DefaultValues"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{85661B8D-1EC5-4D88-87FB-38CEB167E0AE}"
+          SQLTask:SqlStatementSource="EXEC AX_InsertDomainValues" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DefaultValues 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7647ce19-4740-4a33-aa5a-4ab3976c1465}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DefaultValues 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1040,9 +1586,27 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Drop Default Table 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{e9271578-be91-482e-bded-4f564e63171c}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Drop Default Table 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{85661B8D-1EC5-4D88-87FB-38CEB167E0AE}"
+          SQLTask:SqlStatementSource="Drop table AX_Values" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Insert on AX table"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{d283e93e-bb60-4ed9-875d-b405027b2e8b}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5220,6 +5784,7 @@
       DTS:refId="Package\Update Staging Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{455ea5d0-f245-4d7c-ade0-2f614ab620e7}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -5296,6 +5861,22 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
       DTS:To="Package\Insert on AX table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{0BB4B10A-B4F2-4DB8-9763-84B2E552245A}"
+      DTS:From="Package\DefaultValues 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Add new Entities data 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{728BF9F4-3A78-42FE-AC85-4B1E71D034B5}"
+      DTS:From="Package\Add new Entities data 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Drop Default Table 1" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -5606,6 +6187,119 @@
             <s:String>Package\Loop Entities</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Add new Entities data 1\Execute SQL Task"
+          TopLeft="57,99" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Add new Entities data 1\Insert on staging tables"
+          TopLeft="39.5,18.5" />
+        <EdgeLayout
+          Id="Package\Add new Entities data 1.PrecedenceConstraints[Constraint]"
+          TopLeft="138.75,60.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.5"
+              Start="0,0"
+              End="0,31">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="266,153"
+          Size="266,196"
+          Id="Package\Add new Entities data 1"
+          TopLeft="212,518" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\DefaultValues 1"
+          TopLeft="253,415" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="327,457">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18,61"
+              Start="0,0"
+              End="18,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5"
+                    Point2="0,30.5"
+                    Point3="4,30.5" />
+                  <mssgle:LineSegment
+                    End="14,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14,30.5"
+                    Point2="18,30.5"
+                    Point3="18,34.5" />
+                  <mssgle:LineSegment
+                    End="18,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Drop Default Table 1"
+          TopLeft="579,739" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="345,714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="319.5,25"
+              Start="0,0"
+              End="319.5,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.5"
+                    Point2="0,12.5"
+                    Point3="4,12.5" />
+                  <mssgle:LineSegment
+                    End="315.5,12.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="315.5,12.5"
+                    Point2="319.5,12.5"
+                    Point3="319.5,16.5" />
+                  <mssgle:LineSegment
+                    End="319.5,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5701,7 +6395,7 @@
     design-time-name="Package\Insert on AX table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\Insert on AX table\OLE DB Source"
@@ -5733,7 +6427,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5755,7 +6451,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5791,7 +6489,7 @@
     design-time-name="Package\Loop Related Entities\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\Loop Related Entities\Data Flow Task\OLE DB Command"
@@ -5831,7 +6529,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5845,5 +6545,81 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Add new Entities data 1\Insert on staging tables">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Add new Entities data 1\Insert on staging tables\OLE DB Command"
+          TopLeft="512,402" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Add new Entities data 1\Insert on staging tables\Derived Column"
+          TopLeft="522,236" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Add new Entities data 1\Insert on staging tables\OLE DB Source"
+          TopLeft="513,81" />
+        <EdgeLayout
+          Id="Package\Add new Entities data 1\Insert on staging tables.Paths[OLE DB Source Output]"
+          TopLeft="591.5,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,113"
+              Start="0,0"
+              End="9.5,105.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,52.5"
+                    Point2="0,56.5"
+                    Point3="4,56.5" />
+                  <mssgle:LineSegment
+                    End="5.5,56.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,56.5"
+                    Point2="9.5,56.5"
+                    Point3="9.5,60.5" />
+                  <mssgle:LineSegment
+                    End="9.5,105.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Add new Entities data 1\Insert on staging tables.Paths[Derived Column Output]"
+          TopLeft="599.75,278">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,124"
+              Start="0,0"
+              End="0,116.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,116.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

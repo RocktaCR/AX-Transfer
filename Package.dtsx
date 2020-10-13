@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="225"
-  DTS:VersionGUID="{A816C42F-D1E7-467A-B84D-4188377C38FD}">
+  DTS:VersionBuild="228"
+  DTS:VersionGUID="{A4FB570E-D669-4D44-92C8-175A63167FED}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADNS181hILoD4wzvriKJmxbNG5VAbBjbYIoQSk3Q4QI6gAAAAAOgAAAAAIAACAAAABtbszJh3hKXJ+Iu8xxjhMD749IwtkQCGUlePfqH7aGdiAAAAA5zonbIqaK1LJtCDIkrFxAfLyhMJ7UYTHqAjnCWeUoBEAAAABHmlAplt2GvULWYlBnO5nbJ3ModcoBAwTizg3KCdSMkAgYgPP8JJUahQt80K0547dxfVBasxKNaFxHI55RxPFP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACJmfu/+EOhXNYjxv95CIVdfDh9Rv7ceDxDgUZObmxWewAAAAAOgAAAAAIAACAAAACyAwoWS6MQ+tCv28Xq1md4ZSA7xbKSbv4TcXDxMmeR7SAAAAC97Ge6d4pCcxGB+te986QP6qXSx545uih5RuevVEC46UAAAAAqLe2ZhTWBKyWUnYRsFL50GFwvjWzMLG9QvCY1xneqzWHRNoABuy4sSbq6sTu8p/+UyumBkfgRvaNC2QEwPQFT</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA46NcIbvvmjV8Y1jROH+hnT5aIIDb44Zsg2762vTPX5QAAAAAOgAAAAAIAACAAAAC2Fd3TD5wYWd9t5O2zPy0EpNWXeITLJL3TECikN5jiayAAAADyMzxIC0cOr6/lbDIU9Aw0FlVQ/18BtMIQsVRHAgccGEAAAACvvXHEs4hNfzPauX2gCZBSxKX/iql5SeTFqm+vkRPOIqI0bDEE/S7+hRtenKz4atC2frlMM90s7YuEqRul6k90</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2KX+vj+mK06nOYU0mmHQVwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACnqzjixVO8rk4XKHgQms1wqgGCAcU2lM5XXojktiRgTwAAAAAOgAAAAAIAACAAAACs24rb7m2IjiNvKMGyJHbEyCwm4Cektr2+UYwaeccs/yAAAAA0QppSKRHzo0+lno9Dyf15dKPUqh9cdkPtVLR5+ybQ0UAAAADh/o8qjZXOG0SBUuI04YVr3p/1hPO0rau2KXpNbHCkYmRzAPGSl9tmGtbQiMxi49/s9SKL5xzjocEwzl18fHTp</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -495,6 +495,14 @@
               <FEIEItemValue
                 Type="8"
                 Value="ProductSubtype" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProductType2" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProductType2" />
             </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
@@ -991,14 +999,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{D875B6DE-23C0-4D9C-8B92-60FE2D1570F0}"
-          DTS:ObjectName="{D875B6DE-23C0-4D9C-8B92-60FE2D1570F0}"
+          DTS:DTSID="{DC8D5147-58EB-4CE5-B70B-C43B2151EDEC}"
+          DTS:ObjectName="{DC8D5147-58EB-4CE5-B70B-C43B2151EDEC}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::ColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E8754F43-59BD-4C2D-8FE4-C700E6444128}"
-          DTS:ObjectName="{E8754F43-59BD-4C2D-8FE4-C700E6444128}"
+          DTS:DTSID="{92C6ED77-B215-4E34-AA85-C5D0E2AB57D6}"
+          DTS:ObjectName="{92C6ED77-B215-4E34-AA85-C5D0E2AB57D6}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::StagingName" />
       </DTS:ForEachVariableMappings>
@@ -1043,6 +1051,7 @@
       DTS:refId="Package\Insert on AX table"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{d283e93e-bb60-4ed9-875d-b405027b2e8b}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4883,6 +4892,14 @@
                 Type="8"
                 Value="ProductDimensionGroup" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProductType2" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProductType" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -5204,14 +5221,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{EAC3A9CD-68F2-4CCC-82CC-6C45A2195902}"
-          DTS:ObjectName="{EAC3A9CD-68F2-4CCC-82CC-6C45A2195902}"
+          DTS:DTSID="{3758C769-608E-488C-9590-21BA382662FE}"
+          DTS:ObjectName="{3758C769-608E-488C-9590-21BA382662FE}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::Entity" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{DDA3A92E-EDA8-4022-A878-8C5285B7B3B4}"
-          DTS:ObjectName="{DDA3A92E-EDA8-4022-A878-8C5285B7B3B4}"
+          DTS:DTSID="{4027B9F9-B7E9-4F65-A35E-E68CFB9A78F3}"
+          DTS:ObjectName="{4027B9F9-B7E9-4F65-A35E-E68CFB9A78F3}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::Domain" />
       </DTS:ForEachVariableMappings>
@@ -5220,6 +5237,7 @@
       DTS:refId="Package\Update Staging Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{455ea5d0-f245-4d7c-ade0-2f614ab620e7}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -5701,7 +5719,7 @@
     design-time-name="Package\Insert on AX table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\Insert on AX table\OLE DB Source"
@@ -5733,7 +5751,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5755,7 +5775,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5791,7 +5813,7 @@
     design-time-name="Package\Loop Related Entities\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\Loop Related Entities\Data Flow Task\OLE DB Command"
@@ -5831,7 +5853,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
