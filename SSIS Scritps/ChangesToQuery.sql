@@ -80,6 +80,11 @@ Update Query_BackUp set [SoldUnit] = NULL where [SoldUnit] = ''
 Update Query_BackUp set [InventoryUnit] = NULL where [InventoryUnit] = ''
 Update Query_BackUp set [BOM_Unit] = NULL where [BOM_Unit] = ''
 Update Query_BackUp set [UnitUnitsequenceGroupID] = NULL where [UnitUnitsequenceGroupID] = ''
+Update Query_BackUp set [CountryofOrigin] = NULL where [CountryofOrigin] = ''
+Update Query_BackUp set [ItemPurchaseSalesTaxGroup] = NULL where [ItemPurchaseSalesTaxGroup] = ''
+
+
+
 
 Update Query_BackUp
 Set MassVolumeUOM = Null
@@ -90,8 +95,9 @@ where MassVolumeUOM = 'NULL'
 
 Truncate Table Query_BackUp
 
-INsert into Query_BackUp
+INsert into dbo.Query_BackUp
 select * from query 
+
 
 
 
