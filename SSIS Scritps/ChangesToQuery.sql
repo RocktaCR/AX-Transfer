@@ -1,3 +1,5 @@
+use ICADev4
+
 Update Query_BackUp set [Code] = NULL where [Code] = ''
 Update Query_BackUp set [ProductType] = NULL where [ProductType] = ''
 Update Query_BackUp set [Product] = NULL where [Product] = ''
