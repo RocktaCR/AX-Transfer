@@ -85,7 +85,8 @@ Update Query_BackUp set [UnitUnitsequenceGroupID] = NULL where [UnitUnitsequence
 Update Query_BackUp set [CountryofOrigin] = NULL where [CountryofOrigin] = ''
 Update Query_BackUp set [ItemPurchaseSalesTaxGroup] = NULL where [ItemPurchaseSalesTaxGroup] = ''
 
-
+--update Query_BackUp set CountryofOrigin = 'usa'
+--update Query_BackUp set ItemPurchaseSalesTaxGroup = 'NoTax'
 
 
 Update Query_BackUp
@@ -98,7 +99,7 @@ where MassVolumeUOM = 'NULL'
 Truncate Table Query_BackUp
 
 INsert into dbo.Query_BackUp
-select * from query 
+select * from query_prod
 
 
 

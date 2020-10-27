@@ -1,6 +1,6 @@
 USE [ICADev4]
 GO
-/****** Object:  StoredProcedure [dbo].[AX_InsertDomainValues]    Script Date: 10/13/2020 7:35:30 PM ******/
+/****** Object:  StoredProcedure [dbo].[AX_InsertDomainValues]    Script Date: 10/26/2020 12:43:22 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -183,7 +183,7 @@ INSERT INTO AX_Values values ('XENRBC','XENRBC','ProductType2')
 INSERT INTO AX_Values values ('XER','XER','ProductType2')
 INSERT INTO AX_Values values ('XNRBC','XNRBC','ProductType2')
 INSERT INTO AX_Values values ('ZAP70','ZAP70','ProductType2')
-
+INSERT INTO AX_Values values ('CellLineWB','Cell Line WB','ProductType2')
 
 INSERT INTO AX_Values values ('0101','Human Duosets','ProductClass')
 INSERT INTO AX_Values values ('0102','Mouse Duosets','ProductClass')
@@ -655,7 +655,7 @@ INSERT INTO AX_Values values ('112580','Cocalico Biologicals','Vendor')
 INSERT INTO AX_Values values ('112590','Cochrane Consulting, Inc','Vendor')
 INSERT INTO AX_Values values ('112640','Cold Spring Harbor Laboratory','Vendor')
 INSERT INTO AX_Values values ('112650','Cold Spring Harbor Laboratory','Vendor')
-INSERT INTO AX_Values values ('112700','Cole Parmer Instrument Co.','Vendor')
+INSERT INTO AX_Values values ('112700','Cole-parmer','Vendor')
 INSERT INTO AX_Values values ('112900','College Of American','Vendor')
 INSERT INTO AX_Values values ('113100','Colorado Serum Company','Vendor')
 INSERT INTO AX_Values values ('113120','Colorado State University(csu)','Vendor')
@@ -2118,6 +2118,11 @@ INSERT INTO AX_Values values ('994993','Blake Pieper','Vendor')
 INSERT INTO AX_Values values ('997380','Isscr','Vendor')
 INSERT INTO AX_Values values ('999988','The New York Stem Foundation','Vendor')
 INSERT INTO AX_Values values ('999999','Customer Refund Default','Vendor')
+INSERT INTO AX_Values values ('1000000','Minnesota Department Of Aricul','Vendor')
+INSERT INTO AX_Values values ('1000001','Hemacare Corporation','Vendor')
+INSERT INTO AX_Values values ('1000002','Sarstedt, Inc.','Vendor')
+INSERT INTO AX_Values values ('1000003','Shuman Snyder Llp','Vendor')
+INSERT INTO AX_Values values ('1000004','Yrc Freight','Vendor')
 INSERT INTO AX_Values values ('V-000001A','Sarah Johnson','Vendor')
 INSERT INTO AX_Values values ('V-000004A','Jennifer Bassett','Vendor')
 INSERT INTO AX_Values values ('V-000005A','State of Washington','Vendor')
