@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="287"
-  DTS:VersionGUID="{2AA78116-F8BF-48A4-8A3A-6C68F1284E55}">
+  DTS:VersionBuild="288"
+  DTS:VersionGUID="{AA28AC92-AC2E-4D4F-8D63-7955B13F2CD4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABuMaMDb5QkPFgWJVhsWow05b3tUtl0nK46FrCXgmcRCwAAAAAOgAAAAAIAACAAAACOVGG6ELfLCiFhYgnfRjmPFfAPBCxFId+0muLFggpPIiAAAABx+BtR1Zw6lwyusfpq2IGXZNnbRNZAc3lvsLjmzCKwqkAAAADxcHGZ6Tonp3O3hBXZBKGRDd2DLaVrb3rc0XCCX5/tkECL0Fx8bShQ/AdZnyRTlCoB1pgvkEZvzF/ASMtOCZJP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACwRp8YkXu1ySSW7kamDeFh8akVNpjOnFdPz5hAVZFDkAAAAAAOgAAAAAIAACAAAADuT4BpAYR/GdacOnn1OweZdZ7HBLLk+cGUt6BfzgyvIiAAAACKQ2URqUr9A1CsV/LkcWj+h2vYUbqX6kNZZzMuLKpMUkAAAADd4+0Mfjpb+NdYgJB+0m+JUUwQuyjKiYcKw91IXg5lYoJ6p33JXYCyUHEWbiYBLcLPNcLTr3HAdWG1ydVkXIx8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACSOLS4LrgSWza4vt2EFNr7PxJON0NJiHRVERpPRHBQ8gAAAAAOgAAAAAIAACAAAACH0lGigPNvlN67EjNbh5RQN1N4b/tgV/gMxEP40AStACAAAACaJhfw3JOgAn8FJE217ENWY4pC8L1HU071r1hkgKf3BEAAAACbroQ1W3ISkJsYLjAU1h9AHpUno/QGlf62uGASVAYFlf+F+7jWdlwnDba2GSggL1beLwCFQlToxZpt3lCQew+t</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB9+7typ1WEgf6JFHmTEmrNWwcUp/5ujXoXFMpKn1eUsQAAAAAOgAAAAAIAACAAAACIXybcHggh5J9L7yuKnPB4PDu1PWnF4dW9pqLYrEU66SAAAACN77p/L60AymCpo7Fe1NH1xwKEDEBCSPD8eToevNf3RkAAAAAwLVjS4oVV/9oASFYT94NoR/ye0hS+tbSR0LXJAafxVF81pHpZIStykxcnu+vCGjpMALFZXW3RmgaAEtmMPY1U</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5444,7 +5444,7 @@
                         <inputColumn
                           refId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[Code]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="100"
                           cachedName="Code"
                           externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@Code]"
                           lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]" />
@@ -5596,7 +5596,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Code]"
-                          length="10"
+                          length="100"
                           lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]"
                           name="Code"
                           truncationRowDisposition="FailComponent" />
@@ -5626,7 +5626,7 @@
                         <externalMetadataColumn
                           refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Code]"
                           dataType="wstr"
-                          length="10"
+                          length="100"
                           name="Code" />
                         <externalMetadataColumn
                           refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
@@ -5648,7 +5648,7 @@
                         <outputColumn
                           refId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Code]"
                           dataType="wstr"
-                          length="10"
+                          length="100"
                           lineageId="Package\Loop Related Entities\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Code]"
                           name="Code" />
                         <outputColumn
@@ -5743,7 +5743,6 @@
       DTS:AssignExpression="@Counter = @Counter + 1"
       DTS:CreationName="STOCK:FORLOOP"
       DTS:Description="Validate AX entitie"
-      DTS:Disabled="True"
       DTS:DTSID="{B7F0D9BC-E452-4F12-98B5-155A878E2D41}"
       DTS:EvalExpression="@Counter &lt; 10000"
       DTS:ExecutableType="STOCK:FORLOOP"
@@ -5854,12 +5853,12 @@
         <NodeLayout
           Size="170,42"
           Id="Package\Validate AX entitie\Execute SQL Task"
-          TopLeft="35,36" />
+          TopLeft="59.2857142857143,47.4285714285714" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="241,135"
-          Size="241,178"
+          PanelSize="290,147"
+          Size="290,190"
           Id="Package\Validate AX entitie"
           TopLeft="102,579" />
         <EdgeLayout
