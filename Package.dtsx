@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="288"
-  DTS:VersionGUID="{AA28AC92-AC2E-4D4F-8D63-7955B13F2CD4}">
+  DTS:VersionBuild="295"
+  DTS:VersionGUID="{8EC2417E-0F1A-445B-9EA9-EAF19D15CF1B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACwRp8YkXu1ySSW7kamDeFh8akVNpjOnFdPz5hAVZFDkAAAAAAOgAAAAAIAACAAAADuT4BpAYR/GdacOnn1OweZdZ7HBLLk+cGUt6BfzgyvIiAAAACKQ2URqUr9A1CsV/LkcWj+h2vYUbqX6kNZZzMuLKpMUkAAAADd4+0Mfjpb+NdYgJB+0m+JUUwQuyjKiYcKw91IXg5lYoJ6p33JXYCyUHEWbiYBLcLPNcLTr3HAdWG1ydVkXIx8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD2UNlfnD+NltNkYfL0REQR4oJFdrJgFBgetfKIXDFCcgAAAAAOgAAAAAIAACAAAADSV1P3or0MpLheZcjQOvZdU+hbORiNUo8ArWZJrPowNSAAAAB+xp9Hv8HDAmQ53pnWjYYffb7fbWfSFTDlf6vh8dyMh0AAAADTRPI/C5PZkGwVKe4/Jo0TIOZPLlovK0I6dIi6G0MXHhGklXhFikd5mYq+h5sHhbhBSk8KQFh1kWf/GmgLUzp8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -38,11 +38,11 @@
       DTS:ObjectName="MDS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=10.193.17.4;User ID=FFClientek;Initial Catalog=MDSPOC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=10.193.17.6;User ID=FFClientek;Initial Catalog=MDSPOC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB9+7typ1WEgf6JFHmTEmrNWwcUp/5ujXoXFMpKn1eUsQAAAAAOgAAAAAIAACAAAACIXybcHggh5J9L7yuKnPB4PDu1PWnF4dW9pqLYrEU66SAAAACN77p/L60AymCpo7Fe1NH1xwKEDEBCSPD8eToevNf3RkAAAAAwLVjS4oVV/9oASFYT94NoR/ye0hS+tbSR0LXJAafxVF81pHpZIStykxcnu+vCGjpMALFZXW3RmgaAEtmMPY1U</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADp7K2I5yseqStvwPzU8z3JZlXjJdjaahulBJkNH0F28QAAAAAOgAAAAAIAACAAAABXAKvWKceV7ButTiramieJtgagN6QPzr3ibKGWRiHVGCAAAACnVFw9QUkJtj+PIbHeoqEF0eqaXMIt8ziW/lHZ/NdaU0AAAABPT/344qEHclg13x3Y0qy1584+OG0X7Tu7/6HqOcFFk4dykrBzvJHV9uyamqD4ToCy9hsdJeEM/bU/ixgyl6dm</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -55,7 +55,7 @@
       DTS:ObjectName="BatchTag">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">AXTransfer32</DTS:Property>
+        DTS:Name="ParameterValue">AXTransferVen1</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -529,7 +529,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -747,7 +747,7 @@
                         <inputColumn
                           refId="Package\Add new Entities data\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[BatchTag]"
                           cachedDataType="wstr"
-                          cachedLength="14"
+                          cachedLength="12"
                           cachedName="BatchTag"
                           externalMetadataColumnId="Package\Add new Entities data\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@BatchTag]"
                           lineageId="Package\Add new Entities data\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]" />
@@ -1032,7 +1032,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="DefaultValues"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1050,7 +1050,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop Default Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1748,7 +1748,7 @@
                     <inputColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BatchTag]"
                       cachedDataType="wstr"
-                      cachedLength="15"
+                      cachedLength="12"
                       cachedName="BatchTag"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BatchTag]"
                       lineageId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]" />
@@ -2413,7 +2413,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select * from Query_backUp</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select * from Query_backUp where ItemNumber in ('607528')</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -4567,7 +4567,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Remove Data"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4598,14 +4598,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{66634A7A-1C2A-44F5-BC86-4080DC3B30D1}"
-          DTS:ObjectName="{66634A7A-1C2A-44F5-BC86-4080DC3B30D1}"
+          DTS:DTSID="{D6F099A8-E7BC-4F1C-BB86-6E80CFF8E315}"
+          DTS:ObjectName="{D6F099A8-E7BC-4F1C-BB86-6E80CFF8E315}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::DeleteColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{BE5EED06-7DA9-4E15-A48E-682B2EDBD495}"
-          DTS:ObjectName="{BE5EED06-7DA9-4E15-A48E-682B2EDBD495}"
+          DTS:DTSID="{BEB16FD7-B018-4896-A939-B6C5C3519825}"
+          DTS:ObjectName="{BEB16FD7-B018-4896-A939-B6C5C3519825}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::DeleteStagingName" />
       </DTS:ForEachVariableMappings>
@@ -4951,7 +4951,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Validate Entities"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5717,7 +5717,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Staging Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5743,6 +5743,7 @@
       DTS:AssignExpression="@Counter = @Counter + 1"
       DTS:CreationName="STOCK:FORLOOP"
       DTS:Description="Validate AX entitie"
+      DTS:Disabled="True"
       DTS:DTSID="{B7F0D9BC-E452-4F12-98B5-155A878E2D41}"
       DTS:EvalExpression="@Counter &lt; 10000"
       DTS:ExecutableType="STOCK:FORLOOP"
@@ -5761,12 +5762,12 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{1B5750D7-9143-4968-B587-D99C95A2A756}"
-              SQLTask:SqlStatementSource="declare @p7 mdm.IdList&#xA;INSERT INTO @p7 &#xA;select top 100 ID from mdm.tbl_62_433_EN where Status_ID = 1 and ValidationStatus_ID = 4&#xA;exec mdm.udpValidateMembers @User_ID=140,@Version_ID=69,@Entity_ID=433,@MemberType_ID=1,@ProcessUIRulesOnly=0,@ReturnChangedIds=0,@MemberIdList=@p7" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="declare @p7 mdm.IdList&#xA;INSERT INTO @p7 &#xA;select top 100 ID from mdm.tbl_35_298_EN where Status_ID = 1 and (ValidationStatus_ID = 4 or ValidationStatus_ID = 0)&#xA;exec mdm.udpValidateMembers @User_ID=140,@Version_ID=69,@Entity_ID=298,@MemberType_ID=1,@ProcessUIRulesOnly=0,@ReturnChangedIds=0,@MemberIdList=@p7" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -5953,30 +5954,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="480,212">
+          TopLeft="483,228">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="160,19"
+              EndConnector="157,0"
               Start="0,0"
-              End="152.5,19">
+              End="149.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="76,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="76,0"
-                    Point2="80,0"
-                    Point3="80,4" />
-                  <mssgle:LineSegment
-                    End="80,15" />
-                  <mssgle:CubicBezierSegment
-                    Point1="80,15"
-                    Point2="80,19"
-                    Point3="84,19" />
-                  <mssgle:LineSegment
-                    End="152.5,19" />
+                    End="149.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6009,18 +5998,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="749.75,609">
+          TopLeft="749.25,609">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,160"
+              EndConnector="0,146"
               Start="0,0"
-              End="0,152.5">
+              End="0,138.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,152.5" />
+                    End="0,138.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6158,14 +6147,14 @@
           PanelSize="201,71"
           Size="201,114"
           Id="Package\Loop Entities"
-          TopLeft="11.5,4.5" />
+          TopLeft="14.8333333333334,16.7222222222222" />
         <GroupLayout
           Text="Truncate Entities"
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="235,176"
-          Size="235,218"
+          PanelSize="235,186"
+          Size="235,229"
           Id="9efe6d9e-e2e9-4892-9b1f-4f31f6ff8a6e"
           TopLeft="267,108">
           <GroupLayout.ChildrenIds>
@@ -6188,10 +6177,10 @@
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="235,180"
-          Size="235,222"
+          PanelSize="235,159"
+          Size="235,202"
           Id="7789ac2b-e995-43db-a2b8-ad3e04eca930"
-          TopLeft="632,716.5">
+          TopLeft="630.888888888889,702.055555555556">
           <GroupLayout.ChildrenIds>
             <s:String>Package\Loop Entities 1</s:String>
           </GroupLayout.ChildrenIds>
@@ -6301,28 +6290,6 @@
           Id="Package\Insert on AX table\OLE DB Destination"
           TopLeft="516,292" />
         <EdgeLayout
-          Id="Package\Insert on AX table.Paths[Derived Column Output]"
-          TopLeft="601.75,227">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65"
-              Start="0,0"
-              End="0,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Insert on AX table.Paths[OLE DB Source Output]"
           TopLeft="596.25,123">
           <EdgeLayout.Curve>
@@ -6336,6 +6303,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Insert on AX table.Paths[Derived Column Output]"
+          TopLeft="601.75,227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65"
+              Start="0,0"
+              End="0,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
