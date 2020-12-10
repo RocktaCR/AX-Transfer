@@ -10,7 +10,7 @@ GO
 -- Create date: 13/10/2020
 -- Description:	Default values
 -- =============================================
-Create PROCEDURE [dbo].[AX_InsertDomainValues]
+alter PROCEDURE [dbo].[AX_InsertDomainValues]
 AS
 BEGIN
   Create table AX_Values 
@@ -3419,5 +3419,9 @@ INSERT INTO AX_Values values ('V-001596A','Spach Optics, Inc.','Vendor')
 INSERT INTO AX_Values values ('V-001597A','Olson Motor Repair, LLC','Vendor')
 INSERT INTO AX_Values values ('V-001599A','Brad Mies','Vendor')
 INSERT INTO AX_Values values ('V-001600A','Knutson Photography Inc.','Vendor')
+
+--INSERT into AX_Values values ('MTO','Made to Order','SupplyStrategy')
+--INSERT into AX_Values values ('MTS','Made to Stock','SupplyStrategy')
+
 
 END

@@ -97,12 +97,16 @@ where MassVolumeUOM = 'NULL'
 
 
 
-Truncate Table Query_BackUp
+Truncate Table dbo.Query_BackUp
 
-INsert into dbo.Query_BackUp
-select * from query_prod
+insert into dbo.Query_BackUp
+select * from query where ItemGroup not like 'INT%' and ItemGroup not like 'RM%'
 
 
 
 
 Select top 1000 * from Query_BackUp
+
+
+select count(*) from query where ItemGroup not like 'INT%' and ItemGroup not like 'RM%'
+
