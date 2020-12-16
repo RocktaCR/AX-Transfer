@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="350"
-  DTS:VersionGUID="{D59FA7F7-6051-4EF5-9BB1-65D889200C33}">
+  DTS:VersionBuild="354"
+  DTS:VersionGUID="{EE8E4999-47CE-4995-ADCB-EEEEF752C7CA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAh5kN6p36+m/X1iWjRq/QsRbrh3f+qbF1ssV8wM4YqTwAAAAAOgAAAAAIAACAAAADMEtwLHH1aA/aMCCObRk3z6jk61jKu1ZvSI5Nm4Hgk8iAAAAA4TLxlcqzhqbroBM0Ba56YVZpqEwe3o4qNc2hmf/44P0AAAADVf15AyPTh1MKo9ytIosx3yFEx/1R+z7VWrwj4S3A6VFtEoy2dLDHyvs7kbW1/iagNci6jqoepz134QeDVMjbj</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADIQPSgZMHluN1U/zjzYgy9iWin9GfdCbolUjS6zybuGAAAAAAOgAAAAAIAACAAAABXT1gTvZ6+Qk3FR5ee3/nXgwUSsk4BnyJd0K15OCjgfCAAAAC/gNVCOwNZ7bra+uw0x2oAAc0/GHoNH6iwaBHTa8FTk0AAAADbp0asuJjXjqEhdFjdxy0GeTq5HFtPU/4tbhtrPO+RBe3O3xZrnm5zSgOvn/zRhYqYqkGb/rBWHyr3p6llhfdm</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACDiZWIAFx+mCf0zcetDu0xLfHAhveavPc4C0DA74vgGgAAAAAOgAAAAAIAACAAAADGl2b/a+10PnLqZ4Wk9ZJjH/dYot+uHlIk25NCzDV7WyAAAAD0Twg6wu0sQzBfmCix+IglE1GiKG4lPxCsixS+D2B+pUAAAAA8m4qE+tBeRHgfsAwr3eiLZxGNIrPLA/3q83wItz9o8gD2F2Q76I5+16xugE56iH1NS206xc6mJci+mpH9C1Cv</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADDyzU2F2lcIv0ZBkYljK1Sxx0lh7NBltjrmJ3ET46a4AAAAAAOgAAAAAIAACAAAADudYhESuMMsqkEXseeFmJdjasDEzy1Awb3uRQtlndXgyAAAACO0/MPuYoRrDHZYDZ/BlN8hxeEpN6HAszzj1Yrc5bQrkAAAAByIQzrSxoxe1WbKvW1OH8qDDfgBrO4L31XNkCwJ2qRmrE6eYbi260zR35Mw6fpuuWZOnMT8531aZdALCziagkf</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1778,7 +1778,7 @@
                     <inputColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BatchTag]"
                       cachedDataType="wstr"
-                      cachedLength="10"
+                      cachedLength="15"
                       cachedName="BatchTag"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BatchTag]"
                       lineageId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]" />
@@ -1915,6 +1915,19 @@
                       cachedName="PurchaseSTOPPED"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurchaseSTOPPED]"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[PurchaseSTOPPED]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UNNumberAXCode]"
+                      cachedDataType="i8"
+                      cachedName="UNNumberAXCode"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProperShippingName]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[UNNumberAXCode]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PROPERSHIPNAMEEXT]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PROPERSHIPNAMEEXT"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProperShippingNameExtension]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[PROPERSHIPNAMEEXT]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4817,6 +4830,22 @@
                 Type="8"
                 Value="CalculationGroup" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -4862,14 +4891,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{92E4FF87-3209-433E-B6B5-B2291F574AAA}"
-          DTS:ObjectName="{92E4FF87-3209-433E-B6B5-B2291F574AAA}"
+          DTS:DTSID="{FAB8FCBB-CFF2-4D03-9F03-5CCB5B3DB074}"
+          DTS:ObjectName="{FAB8FCBB-CFF2-4D03-9F03-5CCB5B3DB074}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::DeleteColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{EB7C62EA-AE54-4FDC-BEEA-0DEAF65DE6B1}"
-          DTS:ObjectName="{EB7C62EA-AE54-4FDC-BEEA-0DEAF65DE6B1}"
+          DTS:DTSID="{07605EA5-84DE-465B-83C8-86993FF81AFF}"
+          DTS:ObjectName="{07605EA5-84DE-465B-83C8-86993FF81AFF}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::DeleteStagingName" />
       </DTS:ForEachVariableMappings>
@@ -5652,6 +5681,14 @@
                 Type="8"
                 Value="ConfigurationTechnology" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="PROPERSHIPNAMEEXT" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -5973,14 +6010,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E5CCC425-5069-4ECB-8F0E-D515E9986EFC}"
-          DTS:ObjectName="{E5CCC425-5069-4ECB-8F0E-D515E9986EFC}"
+          DTS:DTSID="{2A65657D-4989-4257-A9DA-1AA87E3D5969}"
+          DTS:ObjectName="{2A65657D-4989-4257-A9DA-1AA87E3D5969}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::Entity" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{5532ABD3-D2EB-4F32-AD3A-A0EB1391F67A}"
-          DTS:ObjectName="{5532ABD3-D2EB-4F32-AD3A-A0EB1391F67A}"
+          DTS:DTSID="{87E8210F-EA78-4AD4-8197-EEE2F59133ED}"
+          DTS:ObjectName="{87E8210F-EA78-4AD4-8197-EEE2F59133ED}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::Domain" />
       </DTS:ForEachVariableMappings>
@@ -6071,8 +6108,8 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{21D13CAD-B4E4-40B7-897F-547D82E60543}"
-      DTS:From="Package\Add new Entities data"
+      DTS:DTSID="{10E1DDAD-D9B1-46D5-B444-43965B6D4252}"
+      DTS:From="Package\Proper Ship Names"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Loop Related Entities" />
@@ -6168,40 +6205,6 @@
           Size="290,190"
           Id="Package\Validate AX entitie"
           TopLeft="88.5,539" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="982,379">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="122,-131.5"
-              Start="0,0"
-              End="114.5,-131.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="57,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="57,0"
-                    Point2="61,0"
-                    Point3="61,-4" />
-                  <mssgle:LineSegment
-                    End="61,-127.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="61,-127.5"
-                    Point2="61,-131.5"
-                    Point3="65,-131.5" />
-                  <mssgle:LineSegment
-                    End="114.5,-131.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="1215,328">
@@ -6561,6 +6564,40 @@
             <s:String>Package\Loop Entities 1</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="904,595">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="275.333333333333,-267"
+              Start="0,0"
+              End="275.333333333333,-259.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-42.8694778067885" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-42.8694778067885"
+                    Point2="0,-46.8694778067885"
+                    Point3="4,-46.8694778067885" />
+                  <mssgle:LineSegment
+                    End="271.333333333333,-46.8694778067885" />
+                  <mssgle:CubicBezierSegment
+                    Point1="271.333333333333,-46.8694778067885"
+                    Point2="275.333333333333,-46.8694778067885"
+                    Point3="275.333333333333,-50.8694778067885" />
+                  <mssgle:LineSegment
+                    End="275.333333333333,-259.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
