@@ -1,5 +1,3 @@
-use ICADev4
-
 
 Update Query_BackUp set [Code] = NULL where cast( [Code] as nvarchar) = ''
 Update Query_BackUp set [ProductType] = NULL where cast ( [ProductType] as nvarchar) = ''
@@ -86,27 +84,19 @@ Update Query_BackUp set [UnitUnitsequenceGroupID] = NULL where cast ( [UnitUnits
 Update Query_BackUp set [CountryofOrigin] = NULL where cast ( [CountryofOrigin] as nvarchar) = ''
 Update Query_BackUp set [ItemPurchaseSalesTaxGroup] = NULL where cast ( [ItemPurchaseSalesTaxGroup] as nvarchar) = ''
 
---update Query_BackUp set CountryofOrigin = 'usa'
---update Query_BackUp set ItemPurchaseSalesTaxGroup = 'NoTax'
 
+Update Query_BackUp set PROPERSHIPNAMEEXT = null
+where PROPERSHIPNAMEEXT = ''
+Update Query_BackUp set UNNumberAXCode = null
+where UNNumberAXCode = 0 or UNNUMBER = ''
 
-Update Query_BackUp
-Set MassVolumeUOM = Null
-where MassVolumeUOM = 'NULL'
-
-
-
-
-Truncate Table dbo.Query_BackUp
-
-insert into dbo.Query_BackUp
-select * from query where ItemGroup not like 'INT%' and ItemGroup not like 'RM%'
+Update Query_BackUp set PROPERSHIPNAMEEXT = null
+where UNNumberAXCode is null
 
 
 
+Update Query_BackUp set PROPERSHIPNAMEEXT = null, UNNumberAXCode = null
+where UNNUMBER is null and UNNumberAXCode is not null
 
-Select top 1000 * from Query_BackUp
-
-
-select count(*) from query where ItemGroup not like 'INT%' and ItemGroup not like 'RM%'
-
+Update Query_BackUp set PROPERSHIPNAMEEXT = null, UNNumberAXCode = null
+where ItemNumber in ('5474/10','2251/50','3631/10')

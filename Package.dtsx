@@ -7,12 +7,12 @@
   DTS:CreatorName="Christofer3\christofer"
   DTS:DTSID="{D85D2748-2661-4D1C-9B03-339BC44E3E61}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="354"
-  DTS:VersionGUID="{EE8E4999-47CE-4995-ADCB-EEEEF752C7CA}">
+  DTS:VersionBuild="381"
+  DTS:VersionGUID="{482634F7-6387-4550-B22F-A80E9C15DB5F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADIQPSgZMHluN1U/zjzYgy9iWin9GfdCbolUjS6zybuGAAAAAAOgAAAAAIAACAAAABXT1gTvZ6+Qk3FR5ee3/nXgwUSsk4BnyJd0K15OCjgfCAAAAC/gNVCOwNZ7bra+uw0x2oAAc0/GHoNH6iwaBHTa8FTk0AAAADbp0asuJjXjqEhdFjdxy0GeTq5HFtPU/4tbhtrPO+RBe3O3xZrnm5zSgOvn/zRhYqYqkGb/rBWHyr3p6llhfdm</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAxHltAuwE3LdnZB8u2wx9VLh2/qLQ8I260qu8W5Xo58wAAAAAOgAAAAAIAACAAAACg5Phv02je/A7J2o78e4U4UILC/gEtguC/DIkj38lS9yAAAAArf67GsjYL7DaLdORThhR42yE0IYVJ9YbD1LAlXgtA7EAAAAAjANA7UtRAE4W6eZ1FuQ/9AaLgPpuHUc8ULCxIMCgbxiQ7kjxZRfNRPEAVGssr0LntEtnuclV3yI5VLQkACYhG</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -38,11 +38,11 @@
       DTS:ObjectName="MDS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=10.193.17.4;User ID=FFClientek;Initial Catalog=MDSPOC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=10.193.17.5;User ID=FFClientek;Initial Catalog=MDSPOC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADDyzU2F2lcIv0ZBkYljK1Sxx0lh7NBltjrmJ3ET46a4AAAAAAOgAAAAAIAACAAAADudYhESuMMsqkEXseeFmJdjasDEzy1Awb3uRQtlndXgyAAAACO0/MPuYoRrDHZYDZ/BlN8hxeEpN6HAszzj1Yrc5bQrkAAAAByIQzrSxoxe1WbKvW1OH8qDDfgBrO4L31XNkCwJ2qRmrE6eYbi260zR35Mw6fpuuWZOnMT8531aZdALCziagkf</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAEo3WNceC7A8xzLp7mGZJ0a8rUL0g10tqgej/9yKAiSQAAAAAOgAAAAAIAACAAAADndp0cCjfx928mcJrxjdidtgM/BIHbBfiqLjPxGrPwWCAAAAB8c71VN4bizB+n7bLIVNeNZ+iV3eqv+w/vQVtJulg5rEAAAADjIryXMlxCUHyc7vGMKtmx3gVDSp9tpkkpU1YAXQRD8tbpc9nzAok/Fj7sj8gwCJUXYcoy9SzHQU7j3gN5yzNu</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -55,7 +55,7 @@
       DTS:ObjectName="BatchTag">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">CleanBaV10</DTS:Property>
+        DTS:Name="ParameterValue">CleanBaV14</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -445,7 +445,7 @@
             <FEIEItem>
               <FEIEItemValue
                 Type="8"
-                Value="Site" />
+                Value="InventoryWarehouse" />
               <FEIEItemValue
                 Type="8"
                 Value="Site" />
@@ -762,7 +762,7 @@
                         <inputColumn
                           refId="Package\Add new Entities data\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[BatchTag]"
                           cachedDataType="wstr"
-                          cachedLength="14"
+                          cachedLength="10"
                           cachedName="BatchTag"
                           externalMetadataColumnId="Package\Add new Entities data\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@BatchTag]"
                           lineageId="Package\Add new Entities data\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]" />
@@ -1025,14 +1025,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E245D1D3-55D8-43DF-8EE8-1D59DA79B697}"
-          DTS:ObjectName="{E245D1D3-55D8-43DF-8EE8-1D59DA79B697}"
+          DTS:DTSID="{5106ADDB-7153-4835-809A-AFDAA4518A88}"
+          DTS:ObjectName="{5106ADDB-7153-4835-809A-AFDAA4518A88}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::ColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{C9929724-8987-4162-BF38-3152E627B49A}"
-          DTS:ObjectName="{C9929724-8987-4162-BF38-3152E627B49A}"
+          DTS:DTSID="{7C0A99A7-FC54-4F0B-A974-1A0A7818360C}"
+          DTS:ObjectName="{7C0A99A7-FC54-4F0B-A974-1A0A7818360C}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::StagingName" />
       </DTS:ForEachVariableMappings>
@@ -2486,6 +2486,11 @@
                       dataType="wstr"
                       length="250"
                       name="PurchaseSTOPPED" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RejectSendReason_OLD]"
+                      dataType="wstr"
+                      length="200"
+                      name="RejectSendReason_OLD" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2539,7 +2544,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select * from Query_backUp</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select *  from Query_backUp</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -4846,6 +4851,14 @@
                 Type="8"
                 Value="ProperShippingName" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="SupplyStrategy" />
+              <FEIEItemValue
+                Type="8"
+                Value="SupplyStrategy" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -4891,14 +4904,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{FAB8FCBB-CFF2-4D03-9F03-5CCB5B3DB074}"
-          DTS:ObjectName="{FAB8FCBB-CFF2-4D03-9F03-5CCB5B3DB074}"
+          DTS:DTSID="{E99A28B4-9984-46B4-BC65-965D9668A3F8}"
+          DTS:ObjectName="{E99A28B4-9984-46B4-BC65-965D9668A3F8}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::DeleteColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{07605EA5-84DE-465B-83C8-86993FF81AFF}"
-          DTS:ObjectName="{07605EA5-84DE-465B-83C8-86993FF81AFF}"
+          DTS:DTSID="{72FE304E-2AB1-4CA6-9EC1-0D7167B65D17}"
+          DTS:ObjectName="{72FE304E-2AB1-4CA6-9EC1-0D7167B65D17}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::DeleteStagingName" />
       </DTS:ForEachVariableMappings>
@@ -5245,6 +5258,22 @@
                 Type="8"
                 Value="ConfigurationTechnology" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -5278,10 +5307,90 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{DA95C826-D7B6-4211-92AF-E7DAE0DA0865}"
-          DTS:ObjectName="{DA95C826-D7B6-4211-92AF-E7DAE0DA0865}"
+          DTS:DTSID="{1A0DA84B-2F9E-4E9C-A266-C145ED22655E}"
+          DTS:ObjectName="{1A0DA84B-2F9E-4E9C-A266-C145ED22655E}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::EntityValidation" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop Entities 2"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{67edf6f7-2c73-4ad4-a597-2ac259f29d14}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop Entities 2">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{643fe92d-26df-4af8-9e20-8e1b3109ba68}"
+        DTS:ObjectName="{F5143244-2055-4AA2-B07F-F8C1F77CC9B9}">
+        <DTS:ObjectData>
+          <FEIEItems>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="AX" />
+              <FEIEItemValue
+                Type="8"
+                Value="AX" />
+            </FEIEItem>
+          </FEIEItems>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop Entities 2\Remove Data"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{c8869573-45cc-406b-94bb-7486f75e4f3e}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Remove Data"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{1B5750D7-9143-4968-B587-D99C95A2A756}"
+              SQLTask:SqlStatementSource="Exec TruncateDomainTables ?,?,?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@Domain"
+                SQLTask:DtsVariableName="User::DeleteColumnName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="100" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@Staging"
+                SQLTask:DtsVariableName="User::DeleteStagingName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="100" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@BatchTag"
+                SQLTask:DtsVariableName="$Package::BatchTag"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="100" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{85B661DA-1977-4E5B-8AEA-BBD54A6E52A9}"
+          DTS:ObjectName="{85B661DA-1977-4E5B-8AEA-BBD54A6E52A9}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::DeleteColumnName" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{B4AE333E-FA0A-439F-BC25-AD339ADD1386}"
+          DTS:ObjectName="{B4AE333E-FA0A-439F-BC25-AD339ADD1386}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::DeleteStagingName" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
@@ -6070,7 +6179,7 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Validate AX entitie"
+      DTS:refId="Package\Validate AX entity"
       DTS:AssignExpression="@Counter = @Counter + 1"
       DTS:CreationName="STOCK:FORLOOP"
       DTS:Description="Validate AX entitie"
@@ -6081,11 +6190,11 @@
       DTS:InitExpression="@Counter = 0"
       DTS:LocaleID="-1"
       DTS:MaxConcurrent="1"
-      DTS:ObjectName="Validate AX entitie">
+      DTS:ObjectName="Validate AX entity">
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Validate AX entitie\Execute SQL Task"
+          DTS:refId="Package\Validate AX entity\Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{5A7B76E5-54C0-4253-8D5C-57FDFD3F8271}"
@@ -6093,7 +6202,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6196,41 +6305,75 @@
           TopLeft="783,595" />
         <NodeLayout
           Size="170,42"
-          Id="Package\Validate AX entitie\Execute SQL Task"
+          Id="Package\Validate AX entity\Execute SQL Task"
           TopLeft="59.2857142857143,47.4285714285714" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="290,147"
           Size="290,190"
-          Id="Package\Validate AX entitie"
+          Id="Package\Validate AX entity"
           TopLeft="88.5,539" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="1215,328">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="944,595">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="68.5,107"
+              EndConnector="235.333333333333,-292"
               Start="0,0"
-              End="68.5,99.5">
+              End="235.333333333333,-284.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.5" />
+                    End="0,-24.40407310705" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,49.5"
-                    Point2="0,53.5"
-                    Point3="4,53.5" />
+                    Point1="0,-24.40407310705"
+                    Point2="0,-28.40407310705"
+                    Point3="4,-28.40407310705" />
                   <mssgle:LineSegment
-                    End="64.5,53.5" />
+                    End="231.333333333333,-28.40407310705" />
                   <mssgle:CubicBezierSegment
-                    Point1="64.5,53.5"
-                    Point2="68.5,53.5"
-                    Point3="68.5,57.5" />
+                    Point1="231.333333333333,-28.40407310705"
+                    Point2="235.333333333333,-28.40407310705"
+                    Point3="235.333333333333,-32.40407310705" />
                   <mssgle:LineSegment
-                    End="68.5,99.5" />
+                    End="235.333333333333,-284.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="1250.66666666667,303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.8333333333333,132"
+              Start="0,0"
+              End="32.8333333333333,124.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.3667262969588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.3667262969588"
+                    Point2="0,53.3667262969588"
+                    Point3="4,53.3667262969588" />
+                  <mssgle:LineSegment
+                    End="28.8333333333333,53.3667262969588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.8333333333333,53.3667262969588"
+                    Point2="32.8333333333333,53.3667262969588"
+                    Point3="32.8333333333333,57.3667262969588" />
+                  <mssgle:LineSegment
+                    End="32.8333333333333,124.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6245,26 +6388,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41,115"
+              EndConnector="39,101"
               Start="0,0"
-              End="41,107.5">
+              End="39,93.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5" />
+                    End="0,46.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,53.5"
-                    Point2="0,57.5"
-                    Point3="4,57.5" />
+                    Point1="0,46.5"
+                    Point2="0,50.5"
+                    Point3="4,50.5" />
                   <mssgle:LineSegment
-                    End="37,57.5" />
+                    End="35,50.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="37,57.5"
-                    Point2="41,57.5"
-                    Point3="41,61.5" />
+                    Point1="35,50.5"
+                    Point2="39,50.5"
+                    Point3="39,54.5" />
                   <mssgle:LineSegment
-                    End="41,107.5" />
+                    End="39,93.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6331,30 +6474,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="849,477">
+          TopLeft="843.833333333333,506">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="18.5,118"
+              EndConnector="0,89"
               Start="0,0"
-              End="18.5,110.5">
+              End="0,81.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,55"
-                    Point2="0,59"
-                    Point3="4,59" />
-                  <mssgle:LineSegment
-                    End="14.5,59" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.5,59"
-                    Point2="18.5,59"
-                    Point3="18.5,63" />
-                  <mssgle:LineSegment
-                    End="18.5,110.5" />
+                    End="0,81.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6404,8 +6535,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="222,118"
-          Size="222,161"
+          PanelSize="222,93"
+          Size="222,136"
           Id="Package\Loop Related Entities"
           TopLeft="33.7222222222222,13.9444444444445" />
         <GroupLayout
@@ -6454,8 +6585,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="266,153"
-          Size="266,196"
+          PanelSize="266,196"
+          Size="266,239"
           Id="Package\Add new Entities data"
           TopLeft="12.5,10.5" />
         <GroupLayout
@@ -6463,10 +6594,10 @@
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="297,261"
-          Size="297,304"
+          PanelSize="297,305"
+          Size="297,348"
           Id="c28d51bd-7982-405b-8fae-cb32710ed5df"
-          TopLeft="704.5,228.5">
+          TopLeft="702.5,213.5">
           <GroupLayout.ChildrenIds>
             <s:String>Package\Add new Entities data</s:String>
           </GroupLayout.ChildrenIds>
@@ -6564,40 +6695,17 @@
             <s:String>Package\Loop Entities 1</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="904,595">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="275.333333333333,-267"
-              Start="0,0"
-              End="275.333333333333,-259.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-42.8694778067885" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-42.8694778067885"
-                    Point2="0,-46.8694778067885"
-                    Point3="4,-46.8694778067885" />
-                  <mssgle:LineSegment
-                    End="271.333333333333,-46.8694778067885" />
-                  <mssgle:CubicBezierSegment
-                    Point1="271.333333333333,-46.8694778067885"
-                    Point2="275.333333333333,-46.8694778067885"
-                    Point3="275.333333333333,-50.8694778067885" />
-                  <mssgle:LineSegment
-                    End="275.333333333333,-259.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Loop Entities 2\Remove Data"
+          TopLeft="30,14" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="201,71"
+          Size="201,114"
+          Id="Package\Loop Entities 2"
+          TopLeft="453,487" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6605,7 +6713,7 @@
     design-time-name="Package\Add new Entities data\Insert on staging tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\Add new Entities data\Insert on staging tables\OLE DB Command"
@@ -6649,7 +6757,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6671,7 +6781,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6791,7 +6903,7 @@
     design-time-name="Package\Loop Related Entities\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\Loop Related Entities\Data Flow Task\OLE DB Command"
@@ -6819,7 +6931,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

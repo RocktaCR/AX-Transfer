@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="343"
-  DTS:VersionGUID="{B7A6E810-06CD-4978-8E0D-C0EDA42C38D8}">
+  DTS:VersionBuild="381"
+  DTS:VersionGUID="{482634F7-6387-4550-B22F-A80E9C15DB5F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACAry8bbJiwnDyFw+y/7+pPQlJ66XABmC0jovLvav1MVAAAAAAOgAAAAAIAACAAAAAUM/mZcHFVPboLyvwkwXk46lvT3gGRXN7hBP2QKza5sSAAAADuiPWF8cLs0G1or1sygdZobpIIL+pVOA/zalI3ibURPEAAAACX63Nmw9jherzFAcG4X9jrTB3zwK/Yg/sVMeaC976q/+5evyouzjqNAWxDN/C7zT9/s2s3voPPpCauaRONoFDE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACq1s5IOHGO1rEyjq25Scdps092vvsF5pg4xa9vY9d/YgAAAAAOgAAAAAIAACAAAAD7Hg3v3TqpX+8b9W5+oPPVkqHTjtTOmRAjWgh216KiXSAAAAAegjr4ERDzdkXD228MYCmmBqSjQG/oZOwRbX6gjPogfkAAAAARg+zll0nskDcOkhTpbixkytCBqc+bCa5/DWSGfyLdiQsHHKZM7+ePMqDtg1HzUUxjx7Sj9M0bgrPk6AUio7jH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -38,11 +38,11 @@
       DTS:ObjectName="MDS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=10.193.17.6;User ID=FFClientek;Initial Catalog=MDSPOC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=10.193.17.5;User ID=FFClientek;Initial Catalog=MDSPOC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+YubZCnC8Eu7+4PqxceshgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC+pDzEPr+39Iq7eWX14Psu3O9Qa8KoyL6f8EdGryANlQAAAAAOgAAAAAIAACAAAAAjjKYpD4b9WRjopoyEnSR+gzsr6p+jMdv82MD1mdtDTCAAAACOq8joIhL+Ka1uNqFEK0xuVX1V51nkVrmyx4SXmNdZwUAAAACQIPjHlGjN7Rd7eNpKtxIdPAum34n21fzTLBBSHxrTR9nBZXewXSKoc0/KekQ/YY3n3aIZz89RtCNarq6E6dGt</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ07HmQk9c0a4W76gq1moCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRWciJT5E4/QKznpg0hPSzrmjJPy3tR+GnZAwWd/+AmgAAAAAOgAAAAAIAACAAAAC1/urVa3ZOzbQ5n1bND4dJWKL0KaXGBmetSdrqnnmRoSAAAAAvTOmJSfW80j1a8Rl0ArcqjGT9hQqHLEnYPj1WBCgdUEAAAACsjf6k2awo9Gs238UXmVn/qx2ip39fZBNPtG3UocNUWbJX5XAWT9/QFi74QWbotVfpK0fOL3dpKDM17ss4OHIJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -55,7 +55,7 @@
       DTS:ObjectName="BatchTag">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">CleanBaV10</DTS:Property>
+        DTS:Name="ParameterValue">CleanBaV14</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -200,7 +200,6 @@
       DTS:refId="Package\Add new Entities data"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:Disabled="True"
       DTS:DTSID="{5bddab72-118b-4d9b-acbf-f1e38c9aafb7}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -446,7 +445,7 @@
             <FEIEItem>
               <FEIEItemValue
                 Type="8"
-                Value="Site" />
+                Value="InventoryWarehouse" />
               <FEIEItemValue
                 Type="8"
                 Value="Site" />
@@ -763,7 +762,7 @@
                         <inputColumn
                           refId="Package\Add new Entities data\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].Columns[BatchTag]"
                           cachedDataType="wstr"
-                          cachedLength="14"
+                          cachedLength="10"
                           cachedName="BatchTag"
                           externalMetadataColumnId="Package\Add new Entities data\Insert on staging tables\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@BatchTag]"
                           lineageId="Package\Add new Entities data\Insert on staging tables\Derived Column.Outputs[Derived Column Output].Columns[BatchTag]" />
@@ -1026,14 +1025,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E245D1D3-55D8-43DF-8EE8-1D59DA79B697}"
-          DTS:ObjectName="{E245D1D3-55D8-43DF-8EE8-1D59DA79B697}"
+          DTS:DTSID="{5106ADDB-7153-4835-809A-AFDAA4518A88}"
+          DTS:ObjectName="{5106ADDB-7153-4835-809A-AFDAA4518A88}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::ColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{C9929724-8987-4162-BF38-3152E627B49A}"
-          DTS:ObjectName="{C9929724-8987-4162-BF38-3152E627B49A}"
+          DTS:DTSID="{7C0A99A7-FC54-4F0B-A974-1A0A7818360C}"
+          DTS:ObjectName="{7C0A99A7-FC54-4F0B-A974-1A0A7818360C}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::StagingName" />
       </DTS:ForEachVariableMappings>
@@ -1042,7 +1041,6 @@
       DTS:refId="Package\DefaultValues"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{D65B9E9A-609A-4190-BD47-7038E3A9ECC1}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -1060,13 +1058,12 @@
       DTS:refId="Package\Drop Default Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{51E6803F-9799-4DE6-94E0-9E0D2A8B3DE9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop Default Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1078,7 +1075,6 @@
       DTS:refId="Package\Insert on AX table"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{d283e93e-bb60-4ed9-875d-b405027b2e8b}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1104,8 +1100,9 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Insert on AX table\Derived Column.Inputs[Derived Column Input].Columns[ConfigurationTechnology]"
-                      cachedDataType="wstr"
-                      cachedLength="18"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="ConfigurationTechnology"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ConfigurationTechnology]" />
                   </inputColumns>
@@ -1229,6 +1226,29 @@
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
                           name="FriendlyExpression">12 / 03 / 20</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[ConfigurationTech]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="18"
+                      lineageId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[ConfigurationTech]"
+                      name="ConfigurationTech"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_WSTR,18)#{Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ConfigurationTechnology]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_WSTR,18)ConfigurationTechnology</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -1838,13 +1858,6 @@
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductType]"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductType]" />
                     <inputColumn
-                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ConfigurationTechnology]"
-                      cachedDataType="wstr"
-                      cachedLength="18"
-                      cachedName="ConfigurationTechnology"
-                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ConfigurationTechnology]"
-                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ConfigurationTechnology]" />
-                    <inputColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VendorID]"
                       cachedDataType="wstr"
                       cachedLength="20"
@@ -1877,6 +1890,44 @@
                       cachedName="ImportDate"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastSentToAX]"
                       lineageId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[ImportDate]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ConfigurationTech]"
+                      cachedDataType="wstr"
+                      cachedLength="18"
+                      cachedName="ConfigurationTech"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ConfigurationTechnology]"
+                      lineageId="Package\Insert on AX table\Derived Column.Outputs[Derived Column Output].Columns[ConfigurationTech]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[InventorySTOPPED]"
+                      cachedDataType="i4"
+                      cachedName="InventorySTOPPED"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InventorySTOPPED]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[InventorySTOPPED]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SalesSTOPPED]"
+                      cachedDataType="i4"
+                      cachedName="SalesSTOPPED"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalesSTOPPED]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesSTOPPED]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PurchaseSTOPPED]"
+                      cachedDataType="i4"
+                      cachedName="PurchaseSTOPPED"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurchaseSTOPPED]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[PurchaseSTOPPED]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UNNumberAXCode]"
+                      cachedDataType="i8"
+                      cachedName="UNNumberAXCode"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProperShippingName]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[UNNumberAXCode]" />
+                    <inputColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PROPERSHIPNAMEEXT]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PROPERSHIPNAMEEXT"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProperShippingNameExtension]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[PROPERSHIPNAMEEXT]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2373,7 +2424,7 @@
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RejectSendReason]"
                       dataType="wstr"
-                      length="200"
+                      length="500"
                       name="RejectSendReason" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastSentToAX]"
@@ -2410,6 +2461,36 @@
                       dataType="wstr"
                       length="250"
                       name="ConfigurationTechnology" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProperShippingName]"
+                      dataType="wstr"
+                      length="250"
+                      name="ProperShippingName" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProperShippingNameExtension]"
+                      dataType="wstr"
+                      length="250"
+                      name="ProperShippingNameExtension" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InventorySTOPPED]"
+                      dataType="wstr"
+                      length="250"
+                      name="InventorySTOPPED" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalesSTOPPED]"
+                      dataType="wstr"
+                      length="250"
+                      name="SalesSTOPPED" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurchaseSTOPPED]"
+                      dataType="wstr"
+                      length="250"
+                      name="PurchaseSTOPPED" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RejectSendReason_OLD]"
+                      dataType="wstr"
+                      length="200"
+                      name="RejectSendReason_OLD" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2463,7 +2544,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select * from Query_backUp</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select *  from Query_backUp</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2588,11 +2669,12 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ConfigurationTechnology]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ConfigurationTechnology]"
-                      length="18"
+                      length="50"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ConfigurationTechnology]"
                       name="ConfigurationTechnology"
                       truncationRowDisposition="FailComponent" />
@@ -3384,6 +3466,25 @@
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductClassCode]"
                       name="ProductClassCode"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[UNNumberAXCode]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[UNNumberAXCode]"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[UNNumberAXCode]"
+                      name="UNNumberAXCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[PROPERSHIPNAMEEXT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PROPERSHIPNAMEEXT]"
+                      length="255"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].Columns[PROPERSHIPNAMEEXT]"
+                      name="PROPERSHIPNAMEEXT"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3431,7 +3532,8 @@
                       name="SearchName" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ConfigurationTechnology]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="18"
                       name="ConfigurationTechnology" />
                     <externalMetadataColumn
@@ -3571,7 +3673,7 @@
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ItemGroup]"
                       dataType="wstr"
-                      length="60"
+                      length="10"
                       name="ItemGroup" />
                     <externalMetadataColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CostGroup]"
@@ -3817,6 +3919,15 @@
                       dataType="wstr"
                       length="30"
                       name="ProductClassCode" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[UNNumberAXCode]"
+                      dataType="i8"
+                      name="UNNumberAXCode" />
+                    <externalMetadataColumn
+                      refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PROPERSHIPNAMEEXT]"
+                      dataType="wstr"
+                      length="255"
+                      name="PROPERSHIPNAMEEXT" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3889,7 +4000,8 @@
                       name="SearchName" />
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ConfigurationTechnology]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="18"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ConfigurationTechnology]"
                       name="ConfigurationTechnology" />
@@ -4070,7 +4182,7 @@
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ItemGroup]"
                       dataType="wstr"
-                      length="60"
+                      length="10"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ItemGroup]"
                       name="ItemGroup" />
                     <outputColumn
@@ -4162,6 +4274,17 @@
                       length="6"
                       lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[UNNUMBER]"
                       name="UNNUMBER" />
+                    <outputColumn
+                      refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[UNNumberAXCode]"
+                      dataType="i8"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[UNNumberAXCode]"
+                      name="UNNumberAXCode" />
+                    <outputColumn
+                      refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PROPERSHIPNAMEEXT]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PROPERSHIPNAMEEXT]"
+                      name="PROPERSHIPNAMEEXT" />
                     <outputColumn
                       refId="Package\Insert on AX table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[UNSPSCCODE]"
                       dataType="wstr"
@@ -4382,7 +4505,6 @@
       DTS:refId="Package\Loop Entities"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:Disabled="True"
       DTS:DTSID="{076f0937-35bf-49d8-b36a-a69cc43dbaa1}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -4713,6 +4835,30 @@
                 Type="8"
                 Value="CalculationGroup" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="SupplyStrategy" />
+              <FEIEItemValue
+                Type="8"
+                Value="SupplyStrategy" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -4758,14 +4904,14 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{92E4FF87-3209-433E-B6B5-B2291F574AAA}"
-          DTS:ObjectName="{92E4FF87-3209-433E-B6B5-B2291F574AAA}"
+          DTS:DTSID="{E99A28B4-9984-46B4-BC65-965D9668A3F8}"
+          DTS:ObjectName="{E99A28B4-9984-46B4-BC65-965D9668A3F8}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::DeleteColumnName" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{EB7C62EA-AE54-4FDC-BEEA-0DEAF65DE6B1}"
-          DTS:ObjectName="{EB7C62EA-AE54-4FDC-BEEA-0DEAF65DE6B1}"
+          DTS:DTSID="{72FE304E-2AB1-4CA6-9EC1-0D7167B65D17}"
+          DTS:ObjectName="{72FE304E-2AB1-4CA6-9EC1-0D7167B65D17}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::DeleteStagingName" />
       </DTS:ForEachVariableMappings>
@@ -4774,7 +4920,6 @@
       DTS:refId="Package\Loop Entities 1"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:Disabled="True"
       DTS:DTSID="{ef45dc98-3778-4b3f-8a6e-1a516a80f4f6}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -5113,6 +5258,22 @@
                 Type="8"
                 Value="ConfigurationTechnology" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+            </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingName" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -5146,16 +5307,95 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{DA95C826-D7B6-4211-92AF-E7DAE0DA0865}"
-          DTS:ObjectName="{DA95C826-D7B6-4211-92AF-E7DAE0DA0865}"
+          DTS:DTSID="{1A0DA84B-2F9E-4E9C-A266-C145ED22655E}"
+          DTS:ObjectName="{1A0DA84B-2F9E-4E9C-A266-C145ED22655E}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::EntityValidation" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Loop Entities 2"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{67edf6f7-2c73-4ad4-a597-2ac259f29d14}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop Entities 2">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{643fe92d-26df-4af8-9e20-8e1b3109ba68}"
+        DTS:ObjectName="{F5143244-2055-4AA2-B07F-F8C1F77CC9B9}">
+        <DTS:ObjectData>
+          <FEIEItems>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="AX" />
+              <FEIEItemValue
+                Type="8"
+                Value="AX" />
+            </FEIEItem>
+          </FEIEItems>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop Entities 2\Remove Data"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{c8869573-45cc-406b-94bb-7486f75e4f3e}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Remove Data"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{1B5750D7-9143-4968-B587-D99C95A2A756}"
+              SQLTask:SqlStatementSource="Exec TruncateDomainTables ?,?,?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@Domain"
+                SQLTask:DtsVariableName="User::DeleteColumnName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="100" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@Staging"
+                SQLTask:DtsVariableName="User::DeleteStagingName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="100" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="@BatchTag"
+                SQLTask:DtsVariableName="$Package::BatchTag"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="100" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{85B661DA-1977-4E5B-8AEA-BBD54A6E52A9}"
+          DTS:ObjectName="{85B661DA-1977-4E5B-8AEA-BBD54A6E52A9}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::DeleteColumnName" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{B4AE333E-FA0A-439F-BC25-AD339ADD1386}"
+          DTS:ObjectName="{B4AE333E-FA0A-439F-BC25-AD339ADD1386}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::DeleteStagingName" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Loop Related Entities"
       DTS:CreationName="STOCK:FOREACHLOOP"
-      DTS:Disabled="True"
       DTS:DTSID="{E47DD68F-C360-4FFE-BCD7-EE6744BA066B}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -5550,6 +5790,14 @@
                 Type="8"
                 Value="ConfigurationTechnology" />
             </FEIEItem>
+            <FEIEItem>
+              <FEIEItemValue
+                Type="8"
+                Value="PROPERSHIPNAMEEXT" />
+              <FEIEItemValue
+                Type="8"
+                Value="ProperShippingNameExtension" />
+            </FEIEItem>
           </FEIEItems>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -5871,29 +6119,45 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E5CCC425-5069-4ECB-8F0E-D515E9986EFC}"
-          DTS:ObjectName="{E5CCC425-5069-4ECB-8F0E-D515E9986EFC}"
+          DTS:DTSID="{2A65657D-4989-4257-A9DA-1AA87E3D5969}"
+          DTS:ObjectName="{2A65657D-4989-4257-A9DA-1AA87E3D5969}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::Entity" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{5532ABD3-D2EB-4F32-AD3A-A0EB1391F67A}"
-          DTS:ObjectName="{5532ABD3-D2EB-4F32-AD3A-A0EB1391F67A}"
+          DTS:DTSID="{87E8210F-EA78-4AD4-8197-EEE2F59133ED}"
+          DTS:ObjectName="{87E8210F-EA78-4AD4-8197-EEE2F59133ED}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::Domain" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Proper Ship Names"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0ea6382f-78d5-4874-9ba4-e8aff9ee78a4}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Proper Ship Names"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1B5750D7-9143-4968-B587-D99C95A2A756}"
+          SQLTask:SqlStatementSource="EXEC Add_properShipNames" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Update Staging Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{455ea5d0-f245-4d7c-ade0-2f614ab620e7}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Staging Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5915,21 +6179,22 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Validate AX entitie"
+      DTS:refId="Package\Validate AX entity"
       DTS:AssignExpression="@Counter = @Counter + 1"
       DTS:CreationName="STOCK:FORLOOP"
       DTS:Description="Validate AX entitie"
+      DTS:Disabled="True"
       DTS:DTSID="{B7F0D9BC-E452-4F12-98B5-155A878E2D41}"
       DTS:EvalExpression="@Counter &lt; 10000"
       DTS:ExecutableType="STOCK:FORLOOP"
       DTS:InitExpression="@Counter = 0"
       DTS:LocaleID="-1"
       DTS:MaxConcurrent="1"
-      DTS:ObjectName="Validate AX entitie">
+      DTS:ObjectName="Validate AX entity">
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Validate AX entitie\Execute SQL Task"
+          DTS:refId="Package\Validate AX entity\Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{5A7B76E5-54C0-4253-8D5C-57FDFD3F8271}"
@@ -5952,8 +6217,8 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{21D13CAD-B4E4-40B7-897F-547D82E60543}"
-      DTS:From="Package\Add new Entities data"
+      DTS:DTSID="{10E1DDAD-D9B1-46D5-B444-43965B6D4252}"
+      DTS:From="Package\Proper Ship Names"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Loop Related Entities" />
@@ -6000,10 +6265,18 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
       DTS:CreationName=""
-      DTS:DTSID="{98DE0D8F-B5C7-4963-88EB-CFBBF33F6E7F}"
+      DTS:DTSID="{B33A802F-C176-44D7-99AE-1919161CA727}"
       DTS:From="Package\Add new Entities data"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Proper Ship Names" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{EFEF6FDA-EEF0-4116-B681-F449B6D502C4}"
+      DTS:From="Package\Proper Ship Names"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
       DTS:To="Package\Loop Entities 1" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -6021,48 +6294,52 @@
         <NodeLayout
           Size="148,42"
           Id="Package\DefaultValues"
-          TopLeft="739,225" />
+          TopLeft="734,124" />
         <NodeLayout
           Size="171,42"
           Id="Package\Drop Default Table"
           TopLeft="1198,435" />
         <NodeLayout
+          Size="169,42"
+          Id="Package\Proper Ship Names"
+          TopLeft="783,595" />
+        <NodeLayout
           Size="170,42"
-          Id="Package\Validate AX entitie\Execute SQL Task"
+          Id="Package\Validate AX entity\Execute SQL Task"
           TopLeft="59.2857142857143,47.4285714285714" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="290,147"
           Size="290,190"
-          Id="Package\Validate AX entitie"
+          Id="Package\Validate AX entity"
           TopLeft="88.5,539" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="893,426">
+          TopLeft="944,595">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="285.333333333333,-97"
+              EndConnector="235.333333333333,-292"
               Start="0,0"
-              End="285.333333333333,-89.5">
+              End="235.333333333333,-284.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-44.4288998467382" />
+                    End="0,-24.40407310705" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-44.4288998467382"
-                    Point2="0,-48.4288998467382"
-                    Point3="4,-48.4288998467382" />
+                    Point1="0,-24.40407310705"
+                    Point2="0,-28.40407310705"
+                    Point3="4,-28.40407310705" />
                   <mssgle:LineSegment
-                    End="281.333333333333,-48.4288998467382" />
+                    End="231.333333333333,-28.40407310705" />
                   <mssgle:CubicBezierSegment
-                    Point1="281.333333333333,-48.4288998467382"
-                    Point2="285.333333333333,-48.4288998467382"
-                    Point3="285.333333333333,-52.4288998467382" />
+                    Point1="231.333333333333,-28.40407310705"
+                    Point2="235.333333333333,-28.40407310705"
+                    Point3="235.333333333333,-32.40407310705" />
                   <mssgle:LineSegment
-                    End="285.333333333333,-89.5" />
+                    End="235.333333333333,-284.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6073,30 +6350,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="1250.66666666667,328">
+          TopLeft="1250.66666666667,303">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="32.8333333333333,107"
+              EndConnector="32.8333333333333,132"
               Start="0,0"
-              End="32.8333333333333,99.5">
+              End="32.8333333333333,124.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.2593917710197" />
+                    End="0,49.3667262969588" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,39.2593917710197"
-                    Point2="0,43.2593917710197"
-                    Point3="4,43.2593917710197" />
+                    Point1="0,49.3667262969588"
+                    Point2="0,53.3667262969588"
+                    Point3="4,53.3667262969588" />
                   <mssgle:LineSegment
-                    End="28.8333333333333,43.2593917710197" />
+                    End="28.8333333333333,53.3667262969588" />
                   <mssgle:CubicBezierSegment
-                    Point1="28.8333333333333,43.2593917710197"
-                    Point2="32.8333333333333,43.2593917710197"
-                    Point3="32.8333333333333,47.2593917710197" />
+                    Point1="28.8333333333333,53.3667262969588"
+                    Point2="32.8333333333333,53.3667262969588"
+                    Point3="32.8333333333333,57.3667262969588" />
                   <mssgle:LineSegment
-                    End="32.8333333333333,99.5" />
+                    End="32.8333333333333,124.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6107,18 +6384,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="810,267">
+          TopLeft="808,166">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,159"
+              EndConnector="39,101"
               Start="0,0"
-              End="0,151.5">
+              End="39,93.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,151.5" />
+                    End="0,46.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.5"
+                    Point2="0,50.5"
+                    Point3="4,50.5" />
+                  <mssgle:LineSegment
+                    End="35,50.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35,50.5"
+                    Point2="39,50.5"
+                    Point3="39,54.5" />
+                  <mssgle:LineSegment
+                    End="39,93.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6129,18 +6418,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="581,243">
+          TopLeft="581,240">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="158,0"
+              EndConnector="153,-95"
               Start="0,0"
-              End="150.5,0">
+              End="145.5,-95">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="150.5,0" />
+                    End="72.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.5,0"
+                    Point2="76.5,0"
+                    Point3="76.5,-4" />
+                  <mssgle:LineSegment
+                    End="76.5,-91" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76.5,-91"
+                    Point2="76.5,-95"
+                    Point3="80.5,-95" />
+                  <mssgle:LineSegment
+                    End="145.5,-95" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6173,18 +6474,52 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="848.25,622">
+          TopLeft="843.833333333333,506">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,148"
+              EndConnector="0,89"
               Start="0,0"
-              End="0,140.5">
+              End="0,81.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,140.5" />
+                    End="0,81.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="867.5,637">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-21,133"
+              Start="0,0"
+              End="-21,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.5"
+                    Point2="0,66.5"
+                    Point3="-4,66.5" />
+                  <mssgle:LineSegment
+                    End="-17,66.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17,66.5"
+                    Point2="-21,66.5"
+                    Point3="-21,70.5" />
+                  <mssgle:LineSegment
+                    End="-21,125.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6200,8 +6535,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="222,118"
-          Size="222,161"
+          PanelSize="222,93"
+          Size="222,136"
           Id="Package\Loop Related Entities"
           TopLeft="33.7222222222222,13.9444444444445" />
         <GroupLayout
@@ -6250,8 +6585,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="266,153"
-          Size="266,196"
+          PanelSize="266,196"
+          Size="266,239"
           Id="Package\Add new Entities data"
           TopLeft="12.5,10.5" />
         <GroupLayout
@@ -6259,10 +6594,10 @@
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="297,261"
-          Size="297,304"
+          PanelSize="297,305"
+          Size="297,348"
           Id="c28d51bd-7982-405b-8fae-cb32710ed5df"
-          TopLeft="705.5,373.5">
+          TopLeft="702.5,213.5">
           <GroupLayout.ChildrenIds>
             <s:String>Package\Add new Entities data</s:String>
           </GroupLayout.ChildrenIds>
@@ -6360,6 +6695,17 @@
             <s:String>Package\Loop Entities 1</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Loop Entities 2\Remove Data"
+          TopLeft="30,14" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="201,71"
+          Size="201,114"
+          Id="Package\Loop Entities 2"
+          TopLeft="453,487" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6367,7 +6713,7 @@
     design-time-name="Package\Add new Entities data\Insert on staging tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\Add new Entities data\Insert on staging tables\OLE DB Command"
@@ -6411,7 +6757,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6433,7 +6781,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6453,31 +6803,43 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158,42"
-          Id="Package\Insert on AX table\Derived Column"
-          TopLeft="520,185" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Insert on AX table\OLE DB Source"
-          TopLeft="515,80" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Insert on AX table\OLE DB Destination"
           TopLeft="516,292" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Insert on AX table\OLE DB Source"
+          TopLeft="515,80" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Insert on AX table\Derived Column"
+          TopLeft="520,185" />
         <EdgeLayout
           Id="Package\Insert on AX table.Paths[OLE DB Source Output]"
-          TopLeft="596.25,122">
+          TopLeft="590,122">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63"
+              EndConnector="9,63"
               Start="0,0"
-              End="0,55.5">
+              End="9,55.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.5" />
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="4,31.5" />
+                  <mssgle:LineSegment
+                    End="5,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5,31.5"
+                    Point2="9,31.5"
+                    Point3="9,35.5" />
+                  <mssgle:LineSegment
+                    End="9,55.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6512,7 +6874,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Insert on AX table\OLE DB Source">
+    design-time-name="Package\Insert on AX table\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6525,7 +6887,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Insert on AX table\OLE DB Destination">
+    design-time-name="Package\Insert on AX table\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6541,7 +6903,7 @@
     design-time-name="Package\Loop Related Entities\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\Loop Related Entities\Data Flow Task\OLE DB Command"
@@ -6569,7 +6931,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
